@@ -292,28 +292,3 @@
 })(jQuery);
 
 // extra 
-// pop up nume firma 
-const extraFont = document.querySelector('.pop');
-extraFont.addEventListener('mouseenter', function(e){
-   e.target.classList.add('pop-extra')
-    setTimeout(function() {
-        e.target.classList.remove('pop-extra');
-      }, 1000);
-}, false);
-// schimba culoarea div firma
-// ===============================
-const colorFliper = document.getElementById('colorFliper');
-const colors = ['green', 'red', 'rgba(133,122,200)', '#f15025'];
-const btn = document.getElementById('test1');
-
-btn.addEventListener('mouseenter', function(){
-// console.log(e.currentTarget);
-// colorFliper.classList.add('pop-extra')
-// const randomNumber = getRandomNumber();
-// window.body.style.backgroundColor = colors[randomNumber];
-console.log(btn);
-});
-console.log(this);
-function getRandomNumber(){
-    return Math.floor(Math.random() * colors.length);
-  }
