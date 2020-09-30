@@ -2067,4 +2067,12 @@ footer h3:after {
 
 /*# sourceMappingURL=styles.css.map */
 
-/
+/*extra*/
+/*======================================*/
+/* todo nu stiu dc sa scriu peste ala original*/
+.contact-map {
+  height: 400px;
+}
+.green-color{
+  color: var(--clr-green-dark);
+}
