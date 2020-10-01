@@ -292,3 +292,4 @@
 })(jQuery);
 
 // extra 
+// const colorTest =document.querySelector('.test');
