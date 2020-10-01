@@ -2073,6 +2073,9 @@ footer h3:after {
 .green-color{
   color: var(--clr-green-dark);
 }
+.blue-color{
+  color: var(--clr-primary-5);
+}
  /*carduri lista firme*/
 
 .card h3{
@@ -2084,13 +2087,23 @@ footer h3:after {
   background: #fff;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
   transition: --transition;
-  padding: 14px 80px 18px 36px;
+  padding: 14px 24px;
   cursor: pointer;
+  height: 100px;
+  text-align: center;
 }
 .card-1:hover, .card-2:hover, .card-3:hover{
   transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  }
+}
+
+/* TODO - ce vreau eu este sa fie textul centrat pe mijloc, atat pe orizontala, cat si pe verticala */
+.card-1 > p, .card-2 > p, .card-3 > p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
 
 @media(max-width: 990px){
   .card{
