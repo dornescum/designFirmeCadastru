@@ -73,6 +73,15 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   /*--clr-secondary: hsla(182, 63%, 54%);*/
   --clr-black: #222;
+  /*variante de gri*/
+  --clr-gr1-1: #f1f1f1;
+  --clr-gr1-2: #6C6C74;
+  --clr-gr1-3: #343C44;
+  --clr-gr1-4: #4C545C;
+  --clr-gr1-5: #6C6C74;
+  --clr-gr1-6: #2c2c2c;
+  --clr-gr1-7: #1c1c24;
+  --clr-gr1-8: #17141C;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -2066,12 +2075,15 @@ footer h3:after {
 
 /*extra*/
 /*======================================*/
-/* todo nu stiu dc sa scriu peste ala original*/
+/*=========================================*/
 .contact-map {
   height: 400px;
 }
 .green-color{
   color: var(--clr-green-dark);
+}
+.gold-color{
+  color: #FFDF00;
 }
 .blue-color{
   color: var(--clr-primary-5);
@@ -2082,7 +2094,7 @@ footer h3:after {
   font-weight: 600;
 }
 
-.card-1, .card-2, .card-3 {
+.card-1 {
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -2091,22 +2103,25 @@ footer h3:after {
   cursor: pointer;
   height: 100px;
   text-align: center;
+  align-content: center;
+  justify-content: center;
 }
-.card-1:hover, .card-2:hover, .card-3:hover{
+.card-1:hover{
   transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 /* TODO - ce vreau eu este sa fie textul centrat pe mijloc, atat pe orizontala, cat si pe verticala */
-.card-1 > p, .card-2 > p, .card-3 > p {
+.card-1 > p {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   margin: 0;
 }
-
+/*carduri firme free*/
 @media(max-width: 990px){
   .card{
     margin: 20px;
   }
 }
+
