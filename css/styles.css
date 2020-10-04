@@ -2105,6 +2105,7 @@ footer h3:after {
   text-align: center;
   align-content: center;
   justify-content: center;
+  margin: 10px 0;
 }
 .card-1:hover{
   transform: scale(1.02);
@@ -2117,11 +2118,5 @@ footer h3:after {
   text-align: center;
   vertical-align: middle;
   margin: 0;
-}
-/*carduri firme free*/
-@media(max-width: 990px){
-  .card{
-    margin: 20px;
-  }
 }
 
