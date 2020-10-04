@@ -2126,7 +2126,14 @@ footer h3:after {
     display: block;
     width: 100%;
     font-size: 16px;
-
+  }
+}
+@media screen and (max-width: 1090px) {
+  .mobile1 {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin: 5px;
 
   }
 }
