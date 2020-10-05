@@ -2137,3 +2137,28 @@ footer h3:after {
 
   }
 }
+
+/*butoane tooltip*/
+button[data-tool-tip]{ position: relative}
+button[data-tool-tip]::before{
+content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: var(--clr-primary-5);
+  padding: 0.5em 5.4em;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  /*bottom: 0;*/
+  bottom: 100%;
+  left: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  /*transition: var(--transition);*/
+  transition: transform ease-out 150ms, bottom ease-out 120ms;
+}
+/*HOVER TREBUIE SA FIE IN MIJLOC!!!*/
+button:hover::before {
+transform: scale(1);
+  /*bottom: 100%;*/
+}
