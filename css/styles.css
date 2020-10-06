@@ -2162,3 +2162,9 @@ button:hover::before {
 transform: scale(1);
   /*bottom: 100%;*/
 }
+
+code {
+  color: var(--clr-red-light);
+  font-size: 35px;
+  font-weight: bold;
+}
