@@ -2168,3 +2168,9 @@ code {
   font-size: 35px;
   font-weight: bold;
 }
+.before::before{
+  content: open-quote;
+}
+.before::after{
+  content: close-quote;
+}
