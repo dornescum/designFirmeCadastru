@@ -513,6 +513,10 @@ input[type=checkbox], input[type=radio] {
   .line-banner .searchs ul li {
     margin-bottom: 10px;
   }
+  /*todo pt font mic sm*/
+  /*table {*/
+    /*font-size: 13px;*/
+  /*}*/
 }
 
 /* ===================================
@@ -2112,7 +2116,7 @@ footer h3:after {
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-/* TODO - ce vreau eu este sa fie textul centrat pe mijloc, atat pe orizontala, cat si pe verticala */
+
 .card-1 > p {
   display: table-cell;
   text-align: center;
@@ -2173,4 +2177,15 @@ code {
 }
 .before::after{
   content: close-quote;
+}
+
+/*font mic pt sm display*/
+/*@include media-breakpoint-up(sm) {*/
+/*  body {*/
+/*    font-size: 5px;*/
+/*  }*/
+/*}*/
+
+.table td {
+  padding: 0.15rem;
 }
