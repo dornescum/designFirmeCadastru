@@ -226,7 +226,7 @@
                 <!--stanga-->
                 <div class="col-lg-6 order-1 order-lg-1">
                     <div class="padding-40px-left sm-no-padding">
-                        <h3><i class="fas fa-building text-theme-color"></i> Companie</h3>
+                        <h6><i class="fas fa-building text-theme-color"></i> Companie</h6>
                         <!--<p class="text-extra-dark-gray font-size16 line-height-28">Denumire</p>-->
                         <div class="margin-30px-bottom sm-margin-20px-bottom">
                             <table class="table table-borderless table-hover">
@@ -267,7 +267,7 @@
                 <!--dreapta-->
                 <div class="col-lg-6 order-2 order-lg-2 sm-margin-30px-bottom">
                     <div class="padding-40px-left sm-no-padding">
-                        <h3><i class="fas fa-money-check text-theme-color"></i> Date bancare</h3>
+                        <h6><i class="fas fa-money-check text-theme-color"></i> Date bancare</h6>
                         <!--<p class="text-extra-dark-gray font-size16 line-height-28">It is a long established fact that a-->
                         <!--reader will be distracted by the readable.</p>-->
                         <div class="margin-30px-bottom sm-margin-20px-bottom">
@@ -318,6 +318,10 @@
                 <div class="col-md-9 form-list center-col">
                     <div class="row">
                         <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="exampleInputName" placeholder="Nume" required>
+                        </div>
+                        <div class="form-group col-md-6">
                             <select type="select" class="form-control no-margin-bottom padding-10px-tb"
                                     name="exampleInputName" id="radioContact" placeholder="Selecteaza" required>
                                 <option value="">Selecteaza</option>
@@ -325,18 +329,16 @@
                                 <option value="">Firma cadastru / PFA</option>
                             </select>
                         </div>
+
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control no-margin-bottom padding-10px-tb"
-                                   name="exampleInputEmail" id="exampleInputName" placeholder="Nume" required>
+                                   name="exampleInputEmail" id="exampleInputPhone" placeholder="Telefon" required>
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control no-margin-bottom padding-10px-tb"
                                    name="exampleInputName" id="exampleInputEmail" placeholder="Email" required>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
-                                   name="exampleInputEmail" id="exampleInputPhone" placeholder="Telefon" required>
-                        </div>
+
 
                         <div class="form-group col-md-12">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
@@ -344,8 +346,9 @@
                         </div>
                         <div class="col-md-12">
                             <div class="row justify-content-between">
-                            <button type="submit" class="butn margin-20px-left hover"><span><i class="fa fa-envelope"></i> Trimite</span></button>
-                            <p class="margin-20px-right">* campuri obligatorii</p>
+
+                            <p class="margin-20px-left">* toate camputile sunt obligatorii</p>
+                                <button type="submit" class="butn margin-20px-right hover"><span><i class="fa fa-envelope"></i> Trimite</span></button>
                             </div>
 
                         </div>

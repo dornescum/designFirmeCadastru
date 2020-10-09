@@ -2153,6 +2153,7 @@ content: attr(data-tool-tip);
   padding: 10px 30px;
   color: white;
   border-radius: 5px;
+  border-width: inherit;
   font-size: 14px;
   /*bottom: 0;*/
   /*bottom: 100%;*/
@@ -2165,10 +2166,41 @@ content: attr(data-tool-tip);
   transition: transform ease-out 150ms, bottom ease-out 120ms;
 }
 /*HOVER TREBUIE SA FIE IN MIJLOC!!!*/
-button:hover::before {
+button[data-tool-tip]:hover::before {
 transform: scale(1);
   /*bottom: 100%;*/
+  border: none;
 }
+
+/*p tooltip*/
+a[data-tool-tip]{ position: relative}
+a[data-tool-tip]::after{
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: var(--clr-mc);
+  padding: 0 30px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  /*bottom: 0;*/
+  bottom: 100%;
+  /*left: -150%;*/
+  right: -450%;
+  /*top: 100%;*/
+  white-space: nowrap;
+  transform: scale(0);
+  /*transition: var(--transition);*/
+  transition: transform ease-out 150ms, bottom ease-out 120ms;
+}
+/*HOVER TREBUIE SA FIE IN MIJLOC!!!*/
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  /*bottom: 100%;*/
+  /*border: none;*/
+}
+
+
 
 code {
   color: var(--clr-red-light);
