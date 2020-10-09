@@ -46,6 +46,7 @@ Variables
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
   --clr-primary-5: #49a6e9;
+  --clr-mc: #2196f3;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -2148,14 +2149,16 @@ button[data-tool-tip]::before{
 content: attr(data-tool-tip);
   display: block;
   position: absolute;
-  background-color: var(--clr-primary-5);
-  padding: 0.5em 5.4em;
+  background-color: var(--clr-mc);
+  padding: 10px 30px;
   color: white;
   border-radius: 5px;
   font-size: 14px;
   /*bottom: 0;*/
-  bottom: 100%;
-  left: 0;
+  /*bottom: 100%;*/
+  /*left: 0;*/
+    right: -100%;
+    top: 100%;
   white-space: nowrap;
   transform: scale(0);
   /*transition: var(--transition);*/
@@ -2188,4 +2191,46 @@ code {
 
 .table td {
   padding: 0.15rem;
+}
+.table th {
+  padding: 0.15rem;
+}
+
+@media screen and (max-width: 600px) {
+    .table td {
+        padding: 0.05rem;
+      font-size: 12px;
+    }
+
+}
+/*buton mesaj formular contact*/
+.hover {
+  transform: scale(1);
+}
+.hover:hover {
+  transform: scale(1.1);
+}
+
+/*fancy-link*/
+.fancy-link {
+    color: black;
+    position: relative;
+}
+.fancy-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-mc, red);
+    /*background-color: #2196f3;*/
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.fancy-link:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+
 }
