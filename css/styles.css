@@ -47,6 +47,7 @@ Variables
   /* primary/main color */
   --clr-primary-5: #49a6e9;
   --clr-mc: #2196f3;
+  --clr-blueHover: #007bff;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -2267,5 +2268,26 @@ code {
 .fancy-link:hover::after{
     transform: scale(1);
     transform-origin: left;
-
+}
+.btnM{
+  background: #2196f3;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  -webkit-transition: all linear 300ms;
+  transition: all linear 300ms;
+  border: none;
+}
+.btnM:hover{
+  color: #fff;
+  background: var(--clr-blueHover);
 }
