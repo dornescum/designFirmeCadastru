@@ -2093,8 +2093,11 @@ footer h3:after {
 .blue-color{
   color: var(--clr-primary-5);
 }
+/*gri pt background H*/
+.grey-color{
+  background-color: var(--clr-gr1-4);
+}
  /*carduri lista firme*/
-
 .card h3{
   font-weight: 600;
 }
