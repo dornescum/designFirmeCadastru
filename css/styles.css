@@ -37,6 +37,10 @@
 Variables
 ===============
 */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 :root {
   /* dark shades of primary color*/
@@ -84,6 +88,8 @@ Variables
   --clr-gr1-6: #2c2c2c;
   --clr-gr1-7: #1c1c24;
   --clr-gr1-8: #17141C;
+  --clr-gr1-9:  #808080;
+
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -1731,12 +1737,13 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
 
 .blockquote {
   background: #f1f1f1;
-  border-left: 4px solid #2196f3;
+  border-left: 10px solid var(--clr-gr1-9);
   font-size: 16px;
   font-weight: 500;
   margin: 25px 0;
   padding: 20px 30px 30px;
 }
+
 
 .blockquote p {
   font-size: 15px;
@@ -2107,7 +2114,7 @@ footer h3:after {
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  transition: --transition;
+  transition: all 0.3s linear;
   padding: 14px 24px;
   cursor: pointer;
   height: 100px;
@@ -2117,12 +2124,38 @@ footer h3:after {
   margin: 10px 0;
 }
 .card-1:hover{
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
 }
 
-
 .card-1 > p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+/*card pareri clienti*/
+.card-clienti{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: all 0.3s linear;
+  /*transition: --transition;*/
+
+  padding: 14px 24px;
+  cursor: pointer;
+  height: 200px;
+  /*text-align: center;*/
+  align-content: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.card-clienti:hover{
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-clienti > p {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -2218,6 +2251,14 @@ code {
   content: close-quote;
 }
 
+
+.before-clienti::before{
+  content: open-quote;
+  font-size: 2rem;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+}
 /*font mic pt sm display*/
 /*@include media-breakpoint-up(sm) {*/
 /*  body {*/
@@ -2290,4 +2331,14 @@ code {
 .btnM:hover{
   color: #fff;
   background: var(--clr-blueHover);
+}
+/*parerile clientilor*/
+.p-clienti{
+  /*font-family: 'Courgette', cursive;*/
+  /*font-family: 'Great Vibes', cursive;*/
+    font-family: "serif";
+  font-size: 16px;
+  line-height: 1.2px;
+
+  color: #000;
 }
