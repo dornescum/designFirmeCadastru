@@ -51,7 +51,8 @@ Variables
   /* primary/main color */
   --clr-primary-5: #49a6e9;
   --clr-mc: #2196f3;
-  --clr-blueHover: #007bff;
+  --clr-bluePrimary: #007bff;
+  --clr-blueHover: #0069d9;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -240,12 +241,14 @@ a:hover, a:active {
 
 .butn:hover, .butn:active {
   color: #fff;
-  background: #232323;
+  /*background: #232323;*/
+  background: var(--clr-blueHover);
 }
 
 a.butn:hover, a.butn:active {
   color: #fff;
-  background: #232323;
+  /*background: #232323;*/
+  background: var(--clr-blueHover);
 }
 
 .butn:focus {
@@ -2253,18 +2256,13 @@ code {
 
 
 .before-clienti::before{
-  content: open-quote;
+  content: '“';
   font-size: 2rem;
-  line-height: 0.1em;
-  margin-right: 0.1em;
-  vertical-align: -0.1em;
+  /*line-height: 0.1em;*/
+  /*margin-right: 0.1em;*/
+  vertical-align: -9px;
 }
-/*font mic pt sm display*/
-/*@include media-breakpoint-up(sm) {*/
-/*  body {*/
-/*    font-size: 5px;*/
-/*  }*/
-/*}*/
+
 
 .table td {
   padding: 0.15rem;
@@ -2339,6 +2337,5 @@ code {
     font-family: "serif";
   font-size: 16px;
   line-height: 1.2px;
-
   color: #000;
 }
