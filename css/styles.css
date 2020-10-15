@@ -1740,7 +1740,7 @@ ul.countdown li p.timeRefDays, ul.countdown li p.timeRefHours, ul.countdown li p
 
 .blockquote {
   background: #f1f1f1;
-  border-left: 10px solid var(--clr-gr1-9);
+  border-left: 10px solid  var(--clr-gr1-9);
   font-size: 16px;
   font-weight: 500;
   margin: 25px 0;
@@ -2257,10 +2257,13 @@ code {
 
 .before-clienti::before{
   content: '“';
+  /*content: open-quote;*/
+  /*content: '"';*/
   font-size: 2rem;
   /*line-height: 0.1em;*/
   /*margin-right: 0.1em;*/
-  vertical-align: -9px;
+  vertical-align: 2px;
+  color: var(--clr-gr1-9);
 }
 
 
