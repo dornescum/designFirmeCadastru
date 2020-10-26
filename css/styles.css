@@ -2409,3 +2409,35 @@ code {
     line-height: 1.2px;
     color: #000;
 }
+/*harta localizare varianta mare*/
+#localizare_canvas {
+    height: 900px;
+    width: 100%;
+    border: 0;
+}
+/*buton localizare si animatie*/
+#bounce-btn {
+    display: inline-block;
+    font-size: inherit;
+    /*margin-top: 5rem;*/
+    /*text-transform: capitalize;*/
+    /*letter-spacing: var(--spacing);*/
+    /*padding: .5rem 1rem;*/
+    /*border-radius: var(--radius);*/
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    0% {
+        transform: scale(1);
+    }
+}

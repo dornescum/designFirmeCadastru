@@ -14,6 +14,10 @@
     <!-- title  -->
     <title>Finders - Directory Listing Template</title>
 
+    <!--    bootstrap-toggle-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png"/>
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png"/>
@@ -258,23 +262,16 @@
                         iti poti crea cont gratuit chiar acum.
                     </p>
                     <h6>Date firma/PFA</h6>
-
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="row">Tipul entitatii *</th>
-                            <th>
-                                <label>Firma </label>
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </th>
-                            <th>
-                                <label>PFA </label>
-                                <input type="checkbox" aria-label="Checkbox for following text input">
-                            </th>
-                        </tr>
-                        </thead>
-                    </table>
-
+                    <!--                    tipul enitiati-->
+                    <div class="container">
+                    <div class="row">
+                        <h6>Tipul entitati &nbsp</h6>
+                        <!--                        <input type="checkbox" checked data-toggle="toggle">-->
+                        <input type="checkbox" checked data-toggle="toggle" data-on="Firma" data-off="PFA"
+                               data-onstyle="primary" data-size="small">
+                    </div>
+                    </div>
+                    <!--==============================================-->
 
                     <div class="row">
                         <div class="form-group col-md-12">
@@ -354,8 +351,6 @@
                         </div>
 
 
-
-
                     </div>
 
                     <h6>Date ANCPI</h6>
@@ -382,18 +377,19 @@
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control no-margin-bottom padding-10px-tb"
-                                   name="exampleInputEmail" id="parola2" placeholder="Parola [reintroduceti]  " required>
+                                   name="exampleInputEmail" id="parola2" placeholder="Parola [reintroduceti]  "
+                                   required>
                         </div>
                     </div>
 
                     <p>
                         <label class="font-weight-bold text-dark">Termeni si conditii *</label>
-                        <input  class="margin-50px-left"  id="terms" name="terms" type="checkbox" value="terms" />
+                        <input class="margin-50px-left" id="terms" name="terms" type="checkbox" value="terms"/>
                         <label for="terms">
-                            Am citit si sunt de acord cu <a id="terms-and-conditions" href="#">conditiile de utilizare ale site-ului</a>
+                            Am citit si sunt de acord cu <a id="terms-and-conditions" href="#" class="text-theme-color">conditiile
+                            de utilizare ale site-ului</a>
                         </label>
                     </p>
-
 
 
                     <div class="col-md-12">
@@ -573,6 +569,11 @@
 
 <!--  prism js -->
 <script src="js/prism.js"></script>
+
+
+<!--bootstrap-toggle-->
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
 <!-- custom scripts -->
 <script src="js/main.js"></script>

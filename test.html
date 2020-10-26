@@ -14,6 +14,10 @@
     <!-- title  -->
     <title>Finders - Directory Listing Template</title>
 
+    <!--    bootstrap-toggle-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png"/>
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png"/>
@@ -231,7 +235,7 @@
              data-background="img/banner/hand-shake.jpg">
         <div class="container">
             <h1>
-                Cum functioneaza
+                Parerile clientilor
             </h1>
             <!--                <ul class="text-center">-->
             <!--                    <li>-->
@@ -247,39 +251,170 @@
 
     <!-- start listing list section -->
     <section>
-        <div class="container">
 
-            <div class="row margin-50px-bottom">
-                <div class="col-12 center-col">
-                    <h4>Cum functioneaza</h4>
-                    <p>
-                        Aceasta aplicatie isi propune sa puna in legatura potentialii clienti
-                        cu firmele/PFA de cadastru. Practic va dam posibilitatea, dumneavoastra ca si client
-                        , sa alegeti dintr-o lista de firme pe cea care intruneste toate conditiile dumneavoastra (ex:
-                        experienta, numarul de angajati, dotari, pret etc.).
+
+        <div class="row">
+
+            <div class="col-md-9 form-list center-col">
+                <div class="container margin-10px-top">
+                    <h4>Inregistrare firma cadastru</h4>
+                    <p>Daca esti firma sau PFA si iti desfasori activitatea in domeniul cadastrului,
+                        iti poti crea cont gratuit chiar acum.
                     </p>
+<!--                    <h6>Date firma/PFA</h6>-->
+                    <!--                    tipul enitiati-->
+                    <fieldset class="border p-2 mb-2">
+                        <legend  class="w-auto">Date firma/PFA
+                        </legend>
+                        <div class="row justify-content-start">
+                            <p class="pl-2">Tipul entitati &nbsp</p>
+                            <input type="checkbox" checked data-toggle="toggle" data-on="Firma" data-off="PFA"
+                                   data-onstyle="primary" data-size="small">
+                        </div>
+
+
+
+
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="exampleInputName" placeholder="Nume" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" id="descriere-inscriere" rows="5"
+                                      placeholder="Descriere"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" id="adresa-inscriere" rows="3"
+                                      placeholder="Adresa"></textarea>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <select type="select" class="form-control no-margin-bottom padding-10px-tb"
+                                    name="exampleInputName" id="radioContact" placeholder="Selecteaza" required>
+                                <option value="0" selected="selected">Judet</option>
+                                <option value="1">Alba</option>
+                                <option value="2">Arad</option>
+                                <option value="3">Arges</option>
+                                <option value="4">Bacau</option>
+                                <option value="5">Bihor</option>
+                                <option value="6">Bistrita-Nasaud</option>
+                                <option value="7">Botosani</option>
+                                <option value="9">Braila</option>
+                                <option value="8">Brasov</option>
+                                <option value="100">Bucuresti</option>
+                                <option value="13">Buzau</option>
+                                <option value="14">Calarasi</option>
+                                <option value="15">Caras-Severin</option>
+                                <option value="16">Cluj</option>
+                                <option value="17">Constanta</option>
+                                <option value="18">Covasna</option>
+                                <option value="19">Dambovita</option>
+                                <option value="20">Dolj</option>
+                                <option value="21">Galati</option>
+                                <option value="22">Giurgiu</option>
+                                <option value="23">Gorj</option>
+                                <option value="24">Harghita</option>
+                                <option value="25">Hunedoara</option>
+                                <option value="26">Ialomita</option>
+                                <option value="27">Iasi</option>
+                                <option value="101">Ilfov</option>
+                                <option value="28">Maramures</option>
+                                <option value="29">Mehedinti</option>
+                                <option value="30">Mures</option>
+                                <option value="31">Neamt</option>
+                                <option value="32">Olt</option>
+                                <option value="33">Prahova</option>
+                                <option value="35">Salaj</option>
+                                <option value="34">Satu Mare</option>
+                                <option value="36">Sibiu</option>
+                                <option value="37">Suceava</option>
+                                <option value="38">Teleorman</option>
+                                <option value="39">Timis</option>
+                                <option value="40">Tulcea</option>
+                                <option value="42">Valcea</option>
+                                <option value="41">Vaslui</option>
+                                <option value="43">Vrancea</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="exampleInputPhone" placeholder="Telefon" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="fax-inscriere" placeholder="Fax" required>
+                        </div>
+
+
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="website-inscriere" placeholder="Website" required>
+                        </div>
+
+
+                    </div>
+                    </fieldset>
+
+
+                    <!--==============================================-->
+
+                    <fieldset class="border p-2 mb-2">
+                        <legend  class="w-auto">Date ANCPI
+                        </legend>
+<!--                    <h6>Date ANCPI</h6>-->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="ctegoria" placeholder="Categoria / Clasa " required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="serie" placeholder="Seria si numarul  " required>
+                        </div>
+                    </div>
+                    </fieldset>
+                    <!--==============================================-->
+                    <fieldset class="border p-2 mb-2">
+                        <legend  class="w-auto">Date de conectare
+                        </legend>
+<!--                    <h6>Date de conectare</h6>-->
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="email-formular" placeholder="Email " required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="parola" placeholder="Parola  " required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+                                   name="exampleInputEmail" id="parola2" placeholder="Parola [reintroduceti]  "
+                                   required>
+                        </div>
+                    </div>
+                    </fieldset>
                     <p>
-                        De asemenea, puteti consulta
-                        <a href="/ce-este-cadastrul" target="_blank" class="text-theme-color">articolele de legislatie</a>
-                        pentru a afla mai multe informatii despre ceea ce presupune un cadastru.
+                        <label class="font-weight-bold text-dark">Termeni si conditii *</label>
+                        <input class="margin-50px-left" id="terms" name="terms" type="checkbox" value="terms"/>
+                        <label for="terms">
+                            Am citit si sunt de acord cu <a id="terms-and-conditions" href="#" class="text-theme-color">conditiile
+                            de utilizare ale site-ului</a>
+                        </label>
                     </p>
-                    <p>
-                        Sunt doua modalitati prin care puteti intra in legatura cu firmele/PFA de cadastru:
-                    </p>
-                    <ol class="ml-3">
-                        <li class="margin-20px-left sm-margin-5px-left">Din <a href="index.html" target="_blank" class="text-theme-color">pagina principala</a> selectati de pe harta
-                            judetul corespunzator lucrarii dumneavoastra, apoi urmarind lista afisata
-                            alegeti firma/PFA dorita.</li>
-                        <li class="margin-20px-left sm-margin-5px-left">Cautati firma/PFA, accesand meniul
-                            '<a href="/cauta-firma.html" target="_blank" class="text-theme-color">Cauta Firma</a>'.
-                            Practic filtrati rezultatele afisarii utilizand diferite criterii:
-                            denumire, judet, tipuri de lucrari prestate etc.</li>
-                    </ol>
-                    <p>Daca firma/PFA cautata de dumneavoastra nu se regaseste in lista noastra,
-                        luati legatura cu noi folosind <a href="/contact" target="_blank" class="text-theme-color">formularul de contact</a>
-                        si echipa noastra va face tot ce ii sta in putinta pentru a identifica
-                        si a va pune in legatura directa cu firma/PFA cautata.</p>
-                    <div class="border-bottom mb-3"></div>
+
+
+                    <div class="col-md-12">
+                        <div class="row justify-content-between">
+
+                            <p class="margin-20px-left sm-font-size12">* toate campurile sunt obligatorii</p>
+                            <button type="submit" class="btnM margin-20px-right hover sm-font-size14"><span><i
+                                    class="fa fa-envelope"></i> Trimite</span></button>
+                        </div>
+
+                    </div>
 
 
                 </div>
@@ -448,6 +583,11 @@
 
 <!--  prism js -->
 <script src="js/prism.js"></script>
+
+
+<!--bootstrap-toggle-->
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
 <!-- custom scripts -->
 <script src="js/main.js"></script>

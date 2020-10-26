@@ -14,6 +14,7 @@
     <!-- title  -->
     <title>Finders - Directory Listing Template</title>
 
+
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logos/favicon.png"/>
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png"/>
@@ -231,16 +232,9 @@
              data-background="img/banner/hand-shake.jpg">
         <div class="container">
             <h1>
-                Parerile clientilor
+                Localizare teren
             </h1>
-            <!--                <ul class="text-center">-->
-            <!--                    <li>-->
-            <!--                        <a href="index.html">Home</a>-->
-            <!--                    </li>-->
-            <!--                    <li>-->
-            <!--                        <span class="active">Listing list full width</span>-->
-            <!--                    </li>-->
-            <!--                </ul>-->
+
         </div>
     </section>
     <!-- end page title section -->
@@ -253,52 +247,113 @@
                 <div class="col-12 center-col">
                     <h4>Localizare teren</h4>
                     <p>
-                        Aceasta este o mica aplicatie cu ajutorul careia se poate determina pozitia unui punct de coordonate
-                        cu precizie metrica. Tot ce trebuie sa faceti este sa introduceti in campurile de mai jos valorile
-                        pentru coordonatele <i>X(Nord)</i> si <i>Y(Est)</i>, iar dupa ce ati verificat datele apasati butonul '<i class="text-theme-color font-size14 text-uppercase">Localizare</i> '.
+                        Aceasta este o mica aplicatie cu ajutorul careia se poate determina pozitia unui punct de
+                        coordonate
+                        cu precizie metrica. Tot ce trebuie sa faceti este sa introduceti in campurile de mai jos
+                        valorile
+                        pentru coordonatele <i>X(Nord)</i> si <i>Y(Est)</i>, iar dupa ce ati verificat datele apasati
+                        butonul '<i class="text-theme-color font-size14 text-uppercase">Localizare</i> '
+                        . <br>
+                        Pt explicatii privind modul de folosire apasa aici &nbsp :
+                        <button class="butn" id="bounce-btn"
+                                data-toggle="modal" data-target="#exampleModal"> Explicatii de folosire
+                        </button>
+
+
                     </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cum folosesc aplicatia</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, provident.</p>
+                                    <img src="img/content/plan-amplasament-delimitare-a-imobilului.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, provident.</p>
+                                    <img src="img/avatars/avatar-funny1.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, provident.</p>
+                                    <img src="img/avatars/avatar-funny1.jpg" alt="">
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                        aici inchei modal-->
+
+
                     <p>
                         Trebuie mentionat ca aceste coordonate sunt exprimate in metri si au ca sistem de referinta
-                        <a href="http://www.topo-online.ro/ro/stereo70.php" class="text-theme-color" target="_blank">Sistemul de Proiectie Stereografic 1970</a>.
+                        <a href="http://www.topo-online.ro/ro/stereo70.php" class="text-theme-color" target="_blank">Sistemul
+                            de Proiectie Stereografic 1970</a>.
                     </p>
-                   <p>
-                       Exemplu de coordonate: X(Nord) = <i>329976.803</i> ; Y(Est) = <i>589696.632</i>
-                   </p>
-<!--                    butoanele-->
-                    <div class="form-group">
-                        <table class="table table-hover table-bordered table-responsive-sm">
-                            <tbody class="font-size16">
-                            <tr class="bg-light-gray">
-                                <th class="text-center">
-                                    <label>X (Nord):</label>
-                                    <input type="text" style="width: 150px"
-                                           name="nordInput" id="nordInput" placeholder="500000.000" required>
-                                </th>
-                                <th class="text-center">
-                                    <label>Y (Est):</label>
-                                    <input type="text" style="width: 150px"
-                                           name="estInput" id="estInput" placeholder="500000.000" required>
-                                </th>
-                                <th class="text-center">
-                                   <button class="btn btn-light">Localizare</button>
-                                </th>
+                    <p>
+                        Exemplu de coordonate: X(Nord) = <i>329976.803</i> ; Y(Est) = <i>589696.632</i>
+                    </p>
+                    <!--butoane coordonate-->
+                    <div class="row">
+                        <div class="col-lg-4 text-dark">
 
-                            </tr>
-
-                            </tbody>
-                        </table>
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm"><b>X (Nord)</b></span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                       aria-describedby="inputGroup-sizing-sm"
+                                       placeholder="500000.000">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm2"><b>Y (Est)</b></span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                       aria-describedby="inputGroup-sizing-sm"
+                                       placeholder="500000.000">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="butn btn-block text-center">Localizare</button>
+                        </div>
                     </div>
-
-<!--                    <div class="border-bottom mb-3"></div>-->
-
+                    <!--
 
 
-<!--                    harta-->
-                    <div class="margin-50px-bottom sm-margin-35px-bottom">
+
+                    <--                    harta-->
+                    <div class="margin-50px-bottom sm-margin-35px-bottom sm-margin-10px-top">
                         <h5 class="font-size20 border-bottom padding-5px-bottom">Locatie</h5>
-                        <iframe class="contact-map" id="gmap_canvas"
+                        <iframe class="contact-map" id="localizare_canvas"
                                 src="https://maps.google.com/maps?q=romania&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                 scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                    <!--                    buton harta-->
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control no-margin-bottom padding-10px-tb"
+
+                                   placeholder="https://firmecadastru.ro/localizare-teren/@500000.000,500000.000"
+                            />
+                        </div>
+                        <div class="col-lg-5">
+                            <!--                            <button class="butn btn-block">-->
+                            <!--                                <i class="fab fa-facebook-f"> Share on Facebook</i>-->
+                            <!--                            </button>-->
+                            <a href="#" class="butn btn-block text-center">
+                                <i class="fab fa-facebook-f"> Share on Facebook</i>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -467,6 +522,8 @@
 
 <!--  prism js -->
 <script src="js/prism.js"></script>
+
+
 
 <!-- custom scripts -->
 <script src="js/main.js"></script>
