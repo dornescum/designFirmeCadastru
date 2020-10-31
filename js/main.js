@@ -291,5 +291,6 @@
 
 })(jQuery);
 
-// extra 
-// const colorTest =document.querySelector('.test');
+// extra
+// nume site
+document.title = 'Firme Cadastru'

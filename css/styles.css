@@ -2411,7 +2411,7 @@ code {
 }
 /*harta localizare varianta mare*/
 #localizare_canvas {
-    height: 900px;
+    height: 600px;
     width: 100%;
     border: 0;
 }
