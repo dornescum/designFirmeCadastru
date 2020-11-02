@@ -37,9 +37,7 @@
 Variables
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 
 :root {
@@ -78,6 +76,7 @@ Variables
     --clr-red-light: hsl(360, 71%, 66%);
     --clr-green-dark: hsl(125, 67%, 44%);
     --clr-green-light: hsl(125, 71%, 66%);
+    --clr-grey-fieldset: #6f6f6f;
     /*--clr-secondary: hsla(182, 63%, 54%);*/
     --clr-black: #222;
     /*variante de gri*/
@@ -2444,9 +2443,12 @@ code {
 
 /*inscriere firma*/
 fieldset {
-    color: var(--clr-black);
+    color: var(--clr-grey-fieldset);
+    font-weight: 700;
 }
 fieldset > legend {
     margin-left: 2rem;
+    font-size: 22px;
 }
+
 
