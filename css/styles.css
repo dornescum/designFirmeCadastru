@@ -2151,6 +2151,9 @@ footer h3:after {
 .grey-color {
     background-color: var(--clr-gr1-4);
 }
+.black-color {
+    color: var(--clr-black);
+}
 
 /*carduri lista firme*/
 .card h3 {
