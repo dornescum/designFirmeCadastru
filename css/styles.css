@@ -2474,3 +2474,7 @@ fieldset > legend {
 .shadow-box:hover{
     box-shadow:var(--dark-shadow);
 }
+/*scroll*/
+html {
+    scroll-behavior: smooth;
+}
