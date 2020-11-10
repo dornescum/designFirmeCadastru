@@ -39,7 +39,6 @@ Variables
 */
 
 
-
 :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(205, 86%, 17%);
@@ -89,6 +88,7 @@ Variables
     --clr-gr1-7: #1c1c24;
     --clr-gr1-8: #17141C;
     --clr-gr1-9: #808080;
+    --clr-gr1-10: #6f6f6f;
 
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
@@ -2149,8 +2149,10 @@ footer h3:after {
 
 /*gri pt background H*/
 .grey-color {
-    background-color: var(--clr-gr1-4);
+    color: var(--clr-gr1-10);
+    font-weight: bold;
 }
+
 .black-color {
     color: var(--clr-black);
 }
@@ -2411,12 +2413,14 @@ code {
     line-height: 1.2px;
     color: #000;
 }
+
 /*harta localizare varianta mare*/
 #localizare_canvas {
     height: 600px;
     width: 100%;
     border: 0;
 }
+
 /*buton localizare si animatie*/
 #bounce-btn {
     display: inline-block;
@@ -2449,9 +2453,24 @@ fieldset {
     color: var(--clr-grey-fieldset);
     font-weight: 700;
 }
+
 fieldset > legend {
     margin-left: 2rem;
     font-size: 22px;
 }
 
+/*titlu general pagini */
+.titlu {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,0.5);
+}
+/*shadow login*/
 
+.shadow-box{
+    box-shadow:var(--light-shadow);
+    transition: var(--transition);
+}
+.shadow-box:hover{
+    box-shadow:var(--dark-shadow);
+}
