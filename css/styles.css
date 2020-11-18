@@ -2478,3 +2478,10 @@ fieldset > legend {
 html {
     scroll-behavior: smooth;
 }
+
+/*buton clasa pro standard*/
+.btn-class-lenght{
+    width: 320px;
+    color: white !important;
+    text-align: center;
+}
