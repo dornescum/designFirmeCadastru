@@ -301,6 +301,9 @@
     <!-- test  -->
     <script>
         // import getElement from "./js/data/getElement.js";
+        // import displayTestimonials from "./js/data/displayTestimonials";
+
+
         let Testimonials = [
             {
                 id: 100,
@@ -324,6 +327,7 @@
         // let pareriClienti = getElement('parerileClientilor');
         let pareriClienti = document.getElementById('parerileClientilor');
         window.addEventListener('DOMContentLoaded', function () {
+
             let displayTestimonials = Testimonials.map(function (item) {
                 return `
                           <div class="card blockquote bg-light rounded">
@@ -338,7 +342,7 @@
                           </div>`
             }).join('');
             pareriClienti.innerHTML = displayTestimonials;
-           
+
         })
     </script>
     <!-- inchide test  -->
@@ -402,6 +406,7 @@
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
+    <script type="module" src="js/data/displayTestimonials.js"></script>
     <!-- custom scripts
 <script type="module" src="js/data/parerileClientilor.js"></script> -->
 

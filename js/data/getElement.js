@@ -1,5 +1,5 @@
 function getElement (selection){
-    const element = document.querySelector(selection);
+    const element = document.getElementById(selection);
     if(element){
         return element;
     }
