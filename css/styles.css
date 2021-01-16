@@ -2169,7 +2169,7 @@ footer h3:after {
     transition: all 0.3s linear;
     padding: 14px 24px;
     cursor: pointer;
-    height: 100px;
+    height: 130px;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -2487,3 +2487,6 @@ html {
 }
 
 /*index.html*/
+.card-judete{
+
+}
