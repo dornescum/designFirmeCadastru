@@ -141,42 +141,42 @@
 
 
         /*------------------------------------
-            09. Copy to clipboard
+            09. copy to clipboard
         --------------------------------------*/
 
         if ($(".copy-clipboard").length !== 0) {
-            new ClipboardJS('.copy-clipboard');
+            new clipboardjs('.copy-clipboard');
             $('.copy-clipboard').on('click', function () {
                 let $this = $(this);
-                // var originalText = $this.text();
-                $this.text('Copied');
-                setTimeout(function () {
-                    $this.text('Copy')
+                // var originaltext = $this.text();
+                $this.text('copied');
+                settimeout(function () {
+                    $this.text('copy')
                 }, 2000);
             });
         }
 
         $(".slow-redirect a[href^='#']").click(function (e) {
-            e.preventDefault();
+            e.preventdefault();
 
             let position = $($(this).attr("href")).offset().top - 200;
 
             $("body, html").animate({
-                scrollTop: position
+                scrolltop: position
             }, 1000);
         });
 
 
         /*------------------------------------
-            10. Sliders
+            10. sliders
         --------------------------------------*/
 
-        // Testmonials carousel1
-        $('#testmonials-carousel').owlCarousel({
+        // testmonials carousel1
+        $('#testmonials-carousel').owlcarousel({
             loop: true,
-            responsiveClass: true,
+            responsiveclass: true,
             autoplay: true,
-            smartSpeed: 800,
+            smartspeed: 800,
             nav: false,
             dots: true,
             center: true,
@@ -194,41 +194,41 @@
             }
         });
 
-        // Default owlCarousel
-        $('.listing-grid').owlCarousel({
+        // default owlcarousel
+        $('.listing-grid').owlcarousel({
             items: 1,
             loop: true,
             dots: false,
             margin: 10,
             autoplay: true,
-            smartSpeed: 1000
+            smartspeed: 1000
         });
 
-        // Default owlCarousel
-        $('.owl-carousel').owlCarousel({
+        // default owlcarousel
+        $('.owl-carousel').owlcarousel({
             items: 1,
             loop: true,
             dots: true,
             margin: 0,
             autoplay: true,
-            smartSpeed: 500
+            smartspeed: 500
         });
 
 
         /*------------------------------------
-            11. Tabs
+            11. tabs
         --------------------------------------*/
 
-        //Horizontal Tab
+        //horizontal tab
         if ($(".horizontaltab").length !== 0) {
-            $('.horizontaltab').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
+            $('.horizontaltab').easyresponsivetabs({
+                type: 'default', //types: default, vertical, accordion
                 width: 'auto', //auto or any width like 600px
                 fit: true, // 100% fit in a container
-                tabidentify: 'hor_1', // The tab groups identifier
-                activate: function () { // Callback function if tab is switched
+                tabidentify: 'hor_1', // the tab groups identifier
+                activate: function () { // callback function if tab is switched
                     let $tab = $(this);
-                    let $info = $('#nested-tabInfo');
+                    let $info = $('#nested-tabinfo');
                     let $name = $('span', $info);
                     $name.text($tab.text());
                     $info.show();
@@ -238,23 +238,12 @@
 
 
         /*------------------------------------
-            12. CountUp
+            12. countup
         --------------------------------------*/
 
-        $('.countup').counterUp({
+        $('.countup').counterup({
             delay: 25,
             time: 2000
-        });
-
-
-        /*------------------------------------
-            13. Countdown
-        --------------------------------------*/
-
-        // CountDown for coming soon page
-        $(".countdown").countdown({
-            date: "01 Jan 2021 00:01:00", //set your date and time. EX: 15 May 2014 12:00:00
-            format: "on"
         });
 
 
