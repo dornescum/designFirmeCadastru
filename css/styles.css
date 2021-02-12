@@ -31,7 +31,7 @@
 ====================================== */
 
 /* exercitiu  */
-
+@import "modules/card-main-page.css";
 /*
 =============== 
 Variables
@@ -89,6 +89,7 @@ Variables
     --clr-gr1-8: #17141C;
     --clr-gr1-9: #808080;
     --clr-gr1-10: #6f6f6f;
+    --clr-gr1-11: #999999;
 
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
@@ -471,6 +472,27 @@ input[type=checkbox], input[type=radio] {
     .butn.listi {
         background-color: unset;
         color: #2196f3;
+    }
+}
+/*poza centrala index.html*/
+#main-image{
+    height: 800px;
+}
+
+@media screen and (max-width: 1280px){
+    #main-image{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #main-image{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 599px){
+    #main-image{
+        height: 400px;
     }
 }
 
@@ -2156,6 +2178,9 @@ footer h3:after {
 .black-color {
     color: var(--clr-black);
 }
+.white-color{
+    background: white;
+}
 
 /*carduri lista firme*/
 .card h3 {
@@ -2175,7 +2200,17 @@ footer h3:after {
     justify-content: center;
     margin: 10px 0;
 }
-
+/*fixme nu sta flex*/
+/*@media screen and (max-width: 499px){*/
+/*    .card-1{*/
+/*        flex-wrap: wrap;*/
+/*        margin: 2px 0;*/
+/*        padding: 3px 5px;*/
+/*        height: 80px;*/
+/*        width: 120px;*/
+/*        flex-flow: row;*/
+/*    }*/
+/*}*/
 .card-1:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
@@ -2188,6 +2223,20 @@ footer h3:after {
     vertical-align: middle;
     margin: 0;
 }
+/*carduri mici index*/
+/*.small-cards{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 15px;*/
+/*    margin: 3px 5px;*/
+/*}*/
+/*@media screen and (max-width: 499px){*/
+/*    .small-cards{*/
+/*        padding: 15px;*/
+/*        margin: 3px 5px;*/
+/*    }*/
+/*}*/
 
 /*card pareri clienti*/
 .card-clienti {
