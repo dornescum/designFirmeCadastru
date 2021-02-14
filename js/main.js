@@ -172,7 +172,7 @@
         --------------------------------------*/
 
         // testmonials carousel1
-        $('#testmonials-carousel').owlcarousel({
+        $('#testmonials-carousel').owlCarousel({
             loop: true,
             responsiveclass: true,
             autoplay: true,
@@ -195,7 +195,7 @@
         });
 
         // default owlcarousel
-        $('.listing-grid').owlcarousel({
+        $('.listing-grid').owlCarousel({
             items: 1,
             loop: true,
             dots: false,
@@ -205,7 +205,7 @@
         });
 
         // default owlcarousel
-        $('.owl-carousel').owlcarousel({
+        $('.owl-carousel').owlCarousel({
             items: 1,
             loop: true,
             dots: true,
@@ -241,7 +241,7 @@
             12. countup
         --------------------------------------*/
 
-        $('.countup').counterup({
+        $('.countup').counterUp({
             delay: 25,
             time: 2000
         });

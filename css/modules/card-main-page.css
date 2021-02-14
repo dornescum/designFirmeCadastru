@@ -24,11 +24,12 @@
 .card-main p{
     padding: 15px 0;
 }
+/*fixme*/
 /*.card-main i{*/
 /*   color: white;*/
 /*}*/
 /*.card-main i:hover{*/
-/*   color: blue;*/
+/*   color: blue!important;*/
 /*}*/
 
 
@@ -52,3 +53,70 @@
 /*.card-title:hover{*/
 /*    color: var(--clr-gr1-11);*/
 /*}*/
+
+.card-judete{
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-4);
+    margin: 5px 10px 40px 10px;
+    padding: 0 15px;
+    box-shadow: var(--light-shadow);
+}
+.card-judete:hover{
+    box-shadow: var(--dark-shadow);
+}
+@media screen and (max-width: 992px){
+    .card-judete{
+        width: 140px;
+        height: 140px;
+
+    }
+}
+@media screen and (max-width: 380px){
+    .card-judete{
+        width: 110px;
+        height: 110px;
+    }
+}
+@media screen and (max-width: 340px){
+    .card-judete{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/*@media screen and (max-width: 380px){*/
+/*    .card-judete{*/
+/*        width: 150px;*/
+/*        height: 150px;*/
+
+/*    }*/
+/*}*/
+
+.feature-card{
+    position: relative;
+    text-align: center;
+}
+.feature-card .icon-card{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 95%;
+    z-index: 1;
+    opacity: .05;
+    font-size: 80px;
+}
+
+
+
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
