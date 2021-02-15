@@ -90,6 +90,7 @@ Variables
     --clr-gr1-9: #808080;
     --clr-gr1-10: #6f6f6f;
     --clr-gr1-11: #999999;
+    --clr-gr1-12: #dee2e6;
 
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", sans-serif;
@@ -2102,6 +2103,9 @@ footer h3:after {
     color: #2196f3;
     font-size: 15px;
     font-weight: 400;
+}
+.col-list{
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
