@@ -1,0 +1,14 @@
+#alba{
+    background-image: url("./img/logos/apple-touch-icon-57x57.png");
+}
+.icon-main{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 45%;
+    z-index: 1;
+    /*opacity: .09;*/
+    font-size: 40px;
+    color: #0b2e13;
+}

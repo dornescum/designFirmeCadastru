@@ -32,6 +32,7 @@
 
 /* exercitiu  */
 @import "modules/card-main-page.css";
+@import "modules/index.css";
 /*
 =============== 
 Variables
@@ -47,9 +48,11 @@ Variables
     --clr-primary-4: hsl(205, 63%, 48%);
     /* primary/main color */
     --clr-primary-5: #49a6e9;
-    --clr-mc: #2196f3;
+    /*--clr-mc: #2196f3;*/
+    --clr-mc: #4d8dcb;
     --clr-bluePrimary: #007bff;
     --clr-blueHover: #0069d9;
+
     /* lighter shades of primary color */
     --clr-primary-6: hsl(205, 89%, 70%);
     --clr-primary-7: hsl(205, 90%, 76%);
@@ -163,7 +166,7 @@ a:hover, a:active {
 }
 
 .text-theme-color {
-    color: #2196f3;
+    color: var(--clr-mc);
 }
 
 .cursor-pointer {
@@ -223,7 +226,7 @@ a:hover, a:active {
 /* button style */
 
 .butn {
-    background: #2196f3;
+    background: var(--clr-mc);
     cursor: pointer;
     font-weight: 600;
     color: #fff;
@@ -447,6 +450,13 @@ input[type=checkbox], input[type=radio] {
     border-color: transparent #2196f3 #2196f3 transparent;
 }
 
+.navbar-header-custom{
+    padding: 0;
+}
+/*fixme rescriu top din nav.css*/
+/*.navbar-toggler{*/
+/*    top: 29px !important;*/
+/*}*/
 @media screen and (min-width: 992px) {
     .header-style .navbar-nav li.active > a, .header-style .navbar ul ul li.active > a, .header-style .navbar-nav li.current > a {
         color: #2196f3;
@@ -475,6 +485,7 @@ input[type=checkbox], input[type=radio] {
         background-color: unset;
         color: #2196f3;
     }
+
 }
 /*poza centrala index.html*/
 #main-image{
@@ -491,6 +502,7 @@ input[type=checkbox], input[type=radio] {
     #main-image{
         height: 600px;
     }
+
 }
 @media screen and (max-width: 599px){
     #main-image{
