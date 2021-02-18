@@ -132,3 +132,17 @@
     display: none;
 }
 
+/*.display-judete{*/
+/*    display: block;*/
+/*}*/
+.showLinks{
+    display: none !important;
+}
+@media screen and (max-width: 992px) {
+    .display-judete{
+        display: none !important;
+    }
+    .showLinks{
+        display: block !important;
+    }
+}
