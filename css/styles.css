@@ -51,7 +51,8 @@ Variables
     /*--clr-mc: #2196f3;*/
     --clr-mc: #4d8dcb;
     --clr-bluePrimary: #007bff;
-    --clr-blueHover: #0069d9;
+    /*--clr-blueHover: #0069d9;*/
+    --clr-blueHover: #2196f3;
 
     /* lighter shades of primary color */
     --clr-primary-6: hsl(205, 89%, 70%);
@@ -454,9 +455,9 @@ input[type=checkbox], input[type=radio] {
     padding: 0;
 }
 /*fixme rescriu top din nav.css*/
-/*.navbar-toggler{*/
-/*    top: 29px !important;*/
-/*}*/
+.navbar-toggler{
+    top: 29px !important;
+}
 @media screen and (min-width: 992px) {
     .header-style .navbar-nav li.active > a, .header-style .navbar ul ul li.active > a, .header-style .navbar-nav li.current > a {
         color: #2196f3;

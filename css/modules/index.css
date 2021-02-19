@@ -6,11 +6,10 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    width: 75%;
+    width: 100%;
     z-index: 1;
-    opacity: .5;
+    opacity: .7;
     font-size: 40px;
-    color: #ccc;
 }
 .icon-small{
    height: 80px;

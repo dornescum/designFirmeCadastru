@@ -131,7 +131,9 @@
 .hidden{
     display: none;
 }
-
+/*.active {*/
+/*    display: block !important;*/
+/*}*/
 /*.display-judete{*/
 /*    display: block;*/
 /*}*/
@@ -142,7 +144,7 @@
     .display-judete{
         display: none !important;
     }
-    .showLinks{
-        display: block !important;
-    }
+    /*.showLinks{*/
+    /*    display: block;*/
+    /*}*/
 }
