@@ -10,7 +10,8 @@
 
 .card-main:hover {
     background-color: var(--clr-mc);
-    color: var(--clr-white) !important;
+    color: var(--clr-white);
+    /*color: #fff !important;*/
 }
 .card-main a{
     color: var(--clr-gr1-11);
@@ -19,8 +20,8 @@
 .card-main i{
     color: var(--clr-blueHover);
 }
-.card-main i::after{
-    color: white !important;
+.card-main:hover i{
+    color: white;
 }
 /*.card-main h3{*/
 /*    color: var(--clr-white);*/
