@@ -159,7 +159,7 @@ a:hover, a:active {
 }
 
 .bg-theme {
-    background-color: #2196f3;
+    background-color: var(--clr-mc);
 }
 
 .theme-overlay[data-overlay-dark]:before {
