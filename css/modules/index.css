@@ -14,3 +14,6 @@
 .icon-small{
    height: 80px;
 }
+.blue-background{
+    background-color: var(--clr-mc);
+}
