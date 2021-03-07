@@ -241,8 +241,8 @@
             12. countup
         --------------------------------------*/
 
-        $('.countup').counterUp({
-            delay: 25,
+        $('.countUp').counterUp({
+            delay: 20,
             time: 2000
         });
 
