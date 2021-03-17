@@ -33,6 +33,7 @@
 /* exercitiu  */
 @import "modules/card-main-page.css";
 @import "modules/index.css";
+@import "modules/localizare.css";
 /*
 =============== 
 Variables
@@ -507,7 +508,7 @@ input[type=checkbox], input[type=radio] {
 }
 @media screen and (max-width: 599px){
     #main-image{
-        height: 400px;
+        height: 520px;
     }
 }
 
