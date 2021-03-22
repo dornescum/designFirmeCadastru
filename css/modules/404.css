@@ -20,7 +20,7 @@
     color: var(--white);
 }
 .white-link:hover{
-    color: var(--clr-black);
+    color: var(--white);
 }
 @keyframes flip-rotate {
     0% {

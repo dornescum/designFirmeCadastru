@@ -271,14 +271,6 @@
                 <h1 class="titlu">
                     Parerile clientilor
                 </h1>
-                <!--                <ul class="text-center">-->
-                <!--                    <li>-->
-                <!--                        <a href="index.html">Home</a>-->
-                <!--                    </li>-->
-                <!--                    <li>-->
-                <!--                        <span class="active">Listing list full width</span>-->
-                <!--                    </li>-->
-                <!--                </ul>-->
             </div>
         </section>
         <!-- end page title section -->
@@ -286,7 +278,6 @@
         <!-- start listing list section -->
         <section>
             <div class="container">
-
                 <div class="row margin-50px-bottom">
                     <div class="col-12">
                         <h4>Parerile clientilor</h4>
@@ -301,8 +292,6 @@
                             oferta, care momentan este dezactivat.
                         </p>
                         <div class="border-bottom mb-3"></div>
-
-                        <!-- container firme free-->
                         <div class="container m-1">
                             <div class="row">
                                 <!--primul rand-->
@@ -330,12 +319,12 @@
 
         <!-- start footer section -->
         <footer>
-            <div class="footer-area padding-50px-tb md-padding-70px-tb sm-padding-50px-tb">
+            <div class="footer-area padding-90px-tb md-padding-70px-tb sm-padding-50px-tb">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4  sm-margin-30px-bottom">
                             <ul class="col-center">
-                                <li><a href="index.html"><i class="fa fa-map-marked-alt text-theme-color"></i> Harta judete</a>
+                                <li><a href="index.html"><i class="fa fa-map-marked-alt text-theme-color"></i> Home</a>
                                 </li>
                                 <li><a href="ce-este-cadastru.html"><i class="fa fa-book text-theme-color"></i> Ce este
                                     cadastrul</a></li>
@@ -408,10 +397,6 @@
 
     <!-- test  -->
     <script>
-        // import getElement from "./js/data/getElement.js";
-        // import displayTestimonials from "./js/data/displayTestimonials";
-
-
         let Testimonials = [
             {
                 id: 100,
@@ -550,25 +535,22 @@
             },
 
         ]
-        // let pareriClienti = getElement('parerileClientilor');
         let pareriClienti = document.getElementById('parerileClientilor');
         window.addEventListener('DOMContentLoaded', function () {
-
             let displayTestimonials = Testimonials.map(function (item) {
                 return `
                           <div class="card blockquote bg-light rounded">
                               <p key=${item.id} class="p-clienti before-clienti text-extra-medium-gray">${item.text}</p>
                               <ul class="d-flex justify-content-between">
-                                  <li class="font-size12"><i class="far fa-calendar-alt"></i> ${item.data}</li>
+                                  <li class="font-size12"></li>
                                   <li class="text-extra-medium-gray font-size16 font-italic">
-                                      <i class="fas fa-user"></i> ${item.nume}.
+                                      <i class="fas fa-user"></i> ${item.nume}
                                   </li>
 
                               </ul>
                           </div>`
             }).join('');
             pareriClienti.innerHTML = displayTestimonials;
-
         })
     </script>
     <!-- inchide test  -->
@@ -632,7 +614,7 @@
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
-    <script type="module" src="js/data/displayTestimonials.js"></script>
+<!--    <script type="module" src="js/data/displayTestimonials.js"></script>-->
     <!-- custom scripts
 <script type="module" src="js/data/parerileClientilor.js"></script> -->
 

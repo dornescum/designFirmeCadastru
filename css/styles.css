@@ -2450,7 +2450,7 @@ code {
 }
 
 .btnM {
-    background: #2196f3;
+    background: var(--clr-mc);
     cursor: pointer;
     font-weight: 600;
     color: #fff;
