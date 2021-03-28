@@ -2220,17 +2220,7 @@ footer h3:after {
     justify-content: center;
     margin: 10px 0;
 }
-/*fixme nu sta flex*/
-@media screen and (max-width: 499px){
-    /*.card-1{*/
-    /*    flex-wrap: wrap;*/
-    /*    margin: 2px 0;*/
-    /*    padding: 3px 5px;*/
-    /*    height: 80px;*/
-    /*    width: 150px;*/
-    /*    flex-flow: row;*/
-    /*}*/
-}
+
 .card-1:hover {
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
@@ -2243,20 +2233,10 @@ footer h3:after {
     vertical-align: middle;
     margin: 0;
 }
-/*carduri mici index*/
-/*.small-cards{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    padding: 15px;*/
-/*    margin: 3px 5px;*/
-/*}*/
-/*@media screen and (max-width: 499px){*/
-/*    .small-cards{*/
-/*        padding: 15px;*/
-/*        margin: 3px 5px;*/
-/*    }*/
-/*}*/
+.thumb{
+    height: 143px;
+    width: 350px;
+}
 
 /*card pareri clienti*/
 .card-clienti {
@@ -2301,8 +2281,8 @@ footer h3:after {
         display: block;
         width: 100%;
         font-size: 16px;
-        margin: 5px;
-
+        margin: 8px 16px;
+        padding: 12px 24px;
     }
 }
 
