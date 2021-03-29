@@ -15,3 +15,79 @@
 .blue-background{
     background-color: var(--clr-mc);
 }
+
+/*p.county-number {
+    background-color: #eeeeee;
+    line-height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 3px;
+}*/
+
+#county-image-alba {
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+#county-image-arad {
+    margin-top: 30px;
+    margin-right: 5px;
+}
+@media screen and (max-width: 1199px) {
+    #county-image-arad {
+        height: 70px;
+    }
+}
+@media screen and (max-width: 991px) {
+    #county-image-arad {
+        height: 70px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #county-image-arad {
+        margin-top: 24px;
+        height: 70px;
+    }
+}
+
+#county-image-arges {
+    margin-top: 30px;
+    /*margin-right: 5px;*/
+}
+
+#county-image-bacau {
+    margin-top: 24px;
+}
+
+#county-image-bihor {
+    margin-top: 24px;
+}
+
+#county-image-bistrita-nasaud {
+    margin-top: 36px;
+    height: 70px;
+}
+
+#county-image-botosani {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#county-image-brasov {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#county-image-braila {
+    margin-top: 36px;
+}
+
+
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
