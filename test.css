@@ -1,9 +1,10 @@
 .input-class{
-    padding: 0.5rem;
+    padding: 0.5rem .7rem;
     border-radius: var(--radius-4);
     font-family: "Open Sans";
     font-size: 16px !important;
     color: #6f6f6f !important;
+    text-align: center;
 }
 .input-value{
     width: 40px;
@@ -12,4 +13,8 @@
 }
 td {
     padding: .1rem;
+}
+#local_submit{
+  width: 98%;
+    margin-left:3.5px;
 }
