@@ -2,7 +2,7 @@
     {
         id: 100,
         text: ' Cu mult respect pentru amabilitatea dumneavoastra si promptitudinea in relatiile cu clientii si potentiali clienti. VA MULTUMESC MULT! Sa aveti o zi plina de bucurii si impliniri!',
-        nume: 'Gigina.B',
+        nume: 'Georgeta G.',
         data: '01.01.2020'
     },
     {

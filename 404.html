@@ -5,29 +5,33 @@
 
     <!-- metas -->
     <meta charset="utf-8">
-    <meta name="author" content="Chitrakoot Web" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Chitrakoot Web"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="Finders Directory Listing Template" />
-    <meta name="description" content="Finders - Directory Listing Template" />
+    <meta name="keywords" content="Finders Directory Listing Template"/>
+    <meta name="description" content="Finders - Directory Listing Template"/>
 
     <!-- title  -->
     <title>Firme Cadastru</title>
 
+    <!--    bootstrap-toggle-->
+    <!--    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
+
+
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/logos/favicon.png" />
-    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png" />
+    <link rel="shortcut icon" href="img/logos/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png"/>
 
     <!-- plugins -->
-    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/plugins.css"/>
 
     <!-- search css -->
-    <link rel="stylesheet" href="search/search.css" />
+    <link rel="stylesheet" href="search/search.css"/>
 
     <!-- core style css -->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet"/>
 
 </head>
 
@@ -42,7 +46,7 @@
 <!-- end page loading -->
 
 <!-- start main-wrapper section -->
-<div class="main-wrapper">
+<ul class="main-wrapper">
 
     <!-- start header section -->
     <header>
@@ -263,262 +267,119 @@
     <!-- end header section -->
 
     <!-- start page title section -->
-    <section class="page-title-section bg-img cover-background" data-overlay-dark="3"
-             data-background="img/banner/bg1.jpg">
+    <section class="page-title-section bg-img cover-background" data-overlay-dark="2"
+             data-background="img/banner/inregistrare2.jpg">
         <div class="container">
-            <h1>Topodeltapad SRL</h1>
-            <ul class="text-center">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <span class="active">Judet</span>
-                </li>
-            </ul>
+            <h1 class="titlu" style="opacity: 0"></h1>
         </div>
     </section>
     <!-- end page title section -->
 
-    <!-- start listing-details section -->
     <section>
         <div class="container">
-            <div class="row">
-                <!--partea stanga-->
-                <div class="col-lg-8 margin-50px-bottom">
-                    <!--partea stanga firma-->
-                    <div class="listing-detail margin-50px-bottom sm-margin-35px-bottom">
-                        <h3 class="font-weight-500">CADASTRU MIHAILOV SRL</h3>
-                    </div>
-                    <div class="widget">
-                        <!--varianta table -->
-                        <table class="table table-hover">
-                            <tbody>
-                            <tr>
-                                <td><b>Adresa</b></td>
-                                <td><i class="fas fa-map-marked-alt margin-10px-right text-theme-color"></i> Tulcea</td>
-                            </tr>
-                            <tr>
-                                <td><b>Judete</b></td>
-                                <td>
-                                    <a href="#">Tulcea</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><b>Clasa</b></td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td><b>Seria si nr.</b></td>
-                                <td>RO-TL-F-0070</td>
-                            </tr>
-                            <tr>
-                                <td><b>Verificare ANCPI</b></td>
-                                <td>
-                                    <a class="butn" style="color: white">
-                                        <i class="fas fa-check"></i> Autorizatie valabila
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!--se inchide table -->
-                    <!--formular-->
-                    <div class="comment-form">
-                        <div class="title-g margin-30px-bottom">
-                            <h3>Contact</h3>
+            <ul class="card-flex border border-radius-5" id="err">
+                <!--1-->
+                <li class="card-body">
+                <div class="container">
+                    <div class="row margin-20px-bottom">
+                        <div class="col-lg-4 sm-margin-20px-tb md-margin-20px-tb">
+                            <i class="fa fa-exclamation-triangle icon-err fa-10x fliprotate"></i>
                         </div>
-                        <!--formular-->
-                        <form action="#" id="comment-form" method="post">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <input id="form_name" type="text" name="name" placeholder="Nume" required="required">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input id="form_phone" type="text" name="phone" placeholder="Telefon1" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <textarea id="form_message" name="message" placeholder="Mesaj" rows="4" required="required"></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-right">
-                                        <button type="submit" class="butn">
-                                            <i class="fa fa-envelope"></i>
-                                            <span>Trimite mesaj</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!--partea dreapta-->
-                <div class="col-lg-4">
-                    <div class="side-bar">
-                        <div class="margin-50px-bottom sm-margin-35px-bottom">
-                            <h5 class="font-size20 border-bottom padding-20px-bottom">Tipuri de lucrari executate</h5>
-                            <div class="row">
-                                <div class="col-sm-12 xs-margin-10px-bottom">
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" checked  readonly />
-                                        <label class="form-check-label">cadastru și intabulare apartament</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox"  readonly />
-                                        <label class="form-check-label">cadastru și intabulare teren intravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">cadastru și intabulare teren extravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">cadastru și intabulare teren cu construcție</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">actualizare / rectificare cadastru</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox"  readonly />
-                                        <label class="form-check-label">dezmembrare / parcelare / lotizare teren intravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox"  readonly />
-                                        <label class="form-check-label">scoaterea din circuitul agricol</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox"  readonly />
-                                        <label class="form-check-label">dezmembrare / parcelare / lotizare teren extravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">alipire teren intravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">alipire teren extravilan</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">aviz tehnic OCPI</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">alipire unitati individuale (apartamente)</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox"  readonly />
-                                        <label class="form-check-label">plan topografic (de situație)</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">trasare / înțărușare teren / construcție</label>
-                                    </div>
-                                    <div class="form-check margin-10px-bottom">
-                                        <input class="form-check-input" type="checkbox" readonly />
-                                        <label class="form-check-label">alt tip de lucrare</label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-lg-8 sm-margin-20px-tb md-margin-20px-tb">
+                            <h1 class="shadow-text-title">Hopa !</h1>
+                            <h2>Pagina solicitata nu poate fi gasita. Va rugam verificati URL si apoi reincercati !</h2>
                         </div>
                     </div>
+                    <div  class="card-flex">
+                        <button class="butn m-1">
+                            <a href="javascript:history.back()" class="white-link">inapoi</a>
+                        </button>
+                        <button class="butn m-1">
+                            <a href="index.html" class="white-link">prima pagina</a>
+                            </button>
+                    </div>
                 </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
-    <!-- end listing-details section -->
+</ul>
 
-    <!-- start footer section -->
-    <footer>
-        <div class="footer-area padding-50px-tb md-padding-50px-tb sm-padding-50px-tb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4  sm-margin-30px-bottom">
-                        <ul class="col-center">
-                            <li><a href="index.html"><i class="fa fa-map-marked-alt text-theme-color"></i> Home</a>
-                            </li>
-                            <li><a href="ce-este-cadastru.html"><i class="fa fa-book text-theme-color"></i> Ce este
-                                cadastrul</a></li>
-                            <li><a href="oficii-birouri-cadastru.html"><i class="fa fa-building text-theme-color"></i>
-                                Oficii si birouri de cadastru</a></li>
-                            <li><a href="localizare.html"><i class="fa fa-map-marker text-theme-color"></i>&nbsp;
-                                Localizare teren</a></li>
-                            <li><a href="parerile-clientilor.html"><i class="fa fa-comment text-theme-color"></i>
-                                Parerile clientilor</a></li>
-                        </ul>
-                    </div>
+<!-- start footer section -->
+<footer>
+    <div class="footer-area padding-50px-tb md-padding-50px-tb sm-padding-50px-tb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  sm-margin-30px-bottom">
+                    <ul class="col-center">
+                        <li><a href="index.html"><i class="fa fa-map-marked-alt text-theme-color"></i> Home</a>
+                        </li>
+                        <li><a href="ce-este-cadastru.html"><i class="fa fa-book text-theme-color"></i> Ce este
+                            cadastrul</a></li>
+                        <li><a href="oficii-birouri-cadastru.html"><i class="fa fa-building text-theme-color"></i>
+                            Oficii si birouri de cadastru</a></li>
+                        <li><a href="localizare.html"><i class="fa fa-map-marker text-theme-color"></i>&nbsp;
+                            Localizare teren</a></li>
+                        <li><a href="parerile-clientilor.html"><i class="fa fa-comment text-theme-color"></i>
+                            Parerile clientilor</a></li>
+                    </ul>
+                </div>
 
-                    <div class="col-lg-4 sm-margin-30px-bottom">
-                        <ul class="col-list">
-                            <li><a href="inscriere-firme.html"><i class="fa fa-user-plus text-theme-color"></i>
-                                Inscriere firma / PFA</a></li>
-                            <li><a href="cauta-firma.html"><i class="fa fa-search text-theme-color"></i> Cauta firma /
-                                PFA</a></li>
-                            <li><a href="termeni-conditii.html"><i class="fa fa-info-circle text-theme-color"></i>
-                                Termeni si conditii</a></li>
-                            <li><a href="politica-de-confidentialitate.html"><i
-                                    class="fa fa-info-circle text-theme-color"></i> Politica de confidentialitate</a>
-                            </li>
-                            <li><a href="politica-cookies.html"><i class="fa fa-info-circle text-theme-color"></i>
-                                Politica Cookies</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-4 sm-margin-30px-bottom">
+                    <ul class="col-list">
+                        <li><a href="inscriere-firme.html"><i class="fa fa-user-plus text-theme-color"></i>
+                            Inscriere firma / PFA</a></li>
+                        <li><a href="cauta-firma.html"><i class="fa fa-search text-theme-color"></i> Cauta firma /
+                            PFA</a></li>
+                        <li><a href="termeni-conditii.html"><i class="fa fa-info-circle text-theme-color"></i>
+                            Termeni si conditii</a></li>
+                        <li><a href="politica-de-confidentialitate.html"><i
+                                class="fa fa-info-circle text-theme-color"></i> Politica de confidentialitate</a>
+                        </li>
+                        <li><a href="politica-cookies.html"><i class="fa fa-info-circle text-theme-color"></i>
+                            Politica Cookies</a></li>
+                    </ul>
+                </div>
 
-                    <div class="col-lg-4 sm-margin-30px-bottom">
-                        <ul class="col-list">
-                            <li><a href="http://www.ancpi.ro/" target="_blank"><i
-                                    class="fa fa-globe text-theme-color"></i> ANCPI</a></li>
-                            <li><a href="http://geoportal.ancpi.ro/geoportal/imobile/Harta.html" target="_blank"><i
-                                    class="fa fa-globe text-theme-color"></i> Geoportal ANCPI (Harta)</a></li>
-                            <li><a href="http://epay.ancpi.ro/epay/SelectProd.action?prodId=1420" target="_blank"><i
-                                    class="fa fa-globe text-theme-color"></i> Extras carte funciara online</a></li>
-                            <li><a href="http://www.topo-online.ro/" target="_blank"><i
-                                    class="fa fa-globe text-theme-color"></i> Topo-Online</a></li>
-                            <li><a href="https://old-rtk.topo-service.ro/" target="_blank"><i
-                                    class="fa fa-globe text-theme-color"></i> Statii Permanente GPS</a></li>
-                        </ul>
-                    </div>
-
+                <div class="col-lg-4 sm-margin-30px-bottom">
+                    <ul class="col-list">
+                        <li><a href="http://www.ancpi.ro/" target="_blank"><i
+                                class="fa fa-globe text-theme-color"></i> ANCPI</a></li>
+                        <li><a href="http://geoportal.ancpi.ro/geoportal/imobile/Harta.html" target="_blank"><i
+                                class="fa fa-globe text-theme-color"></i> Geoportal ANCPI (Harta)</a></li>
+                        <li><a href="http://epay.ancpi.ro/epay/SelectProd.action?prodId=1420" target="_blank"><i
+                                class="fa fa-globe text-theme-color"></i> Extras carte funciara online</a></li>
+                        <li><a href="http://www.topo-online.ro/" target="_blank"><i
+                                class="fa fa-globe text-theme-color"></i> Topo-Online</a></li>
+                        <li><a href="https://old-rtk.topo-service.ro/" target="_blank"><i
+                                class="fa fa-globe text-theme-color"></i> Statii Permanente GPS</a></li>
+                    </ul>
                 </div>
 
             </div>
+
         </div>
+    </div>
 
-        <div class="footer-bar xs-padding-15px-tb">
-            <div class="container">
-                <div class="float-right xs-width-100 text-center xs-margin-5px-bottom">
+    <div class="footer-bar xs-padding-15px-tb">
+        <div class="container">
+            <div class="float-right xs-width-100 text-center xs-margin-5px-bottom">
 
-                </div>
-                <div class="float-left xs-width-100 text-center">
-                    <p class="text-medium-gray font-weight-600 margin-5px-top xs-no-margin-top">Copyright © 2020
-                        <a href="index.html">  www.firmecadastru.ro</a>
-                    </p>
-                </div>
+            </div>
+            <div class="float-left xs-width-100 text-center">
+                <p class="text-medium-gray font-weight-600 margin-5px-top xs-no-margin-top">Copyright © 2020
+                    <a href="index.html">  www.firmecadastru.ro</a>
+                </p>
             </div>
         </div>
-    </footer>
-    <!-- end footer section -->
-
-
-
-</div>
+    </div>
+</footer>
+<!-- end footer section -->
 <!-- end main-wrapper section -->
 
 <!-- start scroll to top -->
 <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
 <!-- end scroll to top -->
-
-<!-- all js include start -->
-
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
