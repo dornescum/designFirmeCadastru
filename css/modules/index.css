@@ -10,7 +10,8 @@
     font-size: 40px;
 }
 .icon-small{
-   height: 80px;
+    height: 80px;
+    margin-top: 24px;
 }
 .blue-background{
     background-color: var(--clr-mc);
@@ -36,14 +37,6 @@
     margin-top: 30px;
 }
 
-#county-image-bacau {
-    margin-top: 24px;
-}
-
-#county-image-bihor {
-    margin-top: 24px;
-}
-
 #county-image-bistrita-nasaud {
     margin-top: 36px;
     height: 70px;
@@ -60,20 +53,81 @@
 }
 
 #county-image-braila {
-    margin-top: 24px;
     margin-right: 5px;
     height: 70px;
 }
 
-#county-image-bucuresti {
-    margin-top: 24px;
+#county-image-cluj {
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
-#county-image-buzau {
-    margin-top: 24px;
+#county-image-constanta {
+    margin-right: 20px;
 }
 
-#county-image-carasSeverin {
-    margin-top: 24px;
+#county-image-dambovita {
+    margin-left: 14px;
+}
+
+#county-image-gorj {
+    margin-right: 24px;
+}
+
+#county-image-harghita {
+    margin-left: 4px;
+}
+
+#county-image-hunedoara {
+    margin-left: 10px;
+}
+
+#county-image-ialomita {
+    margin-top: 30px;
+    width: 144px;
+}
+
+#county-image-iasi {
+    margin-top: 30px;
+}
+
+#county-container-ilfov h5 {
+    margin-bottom: 8px;
+}
+#county-container-ilfov p {
+    margin-bottom: 36px;
+    margin-left: 16px;
+}
+
+#county-image-mehedinti {
+    margin-right: 20px;
+}
+
+#county-image-olt {
+    margin-right: 10px;
+}
+
+#county-image-suceava {
+    margin-top: 30px;
+}
+
+#county-image-teleorman {
+    margin-right: 8px;
+}
+
+#county-image-timis {
+    margin-top: 30px;
+}
+
+#county-image-tulcea {
+    margin-top: 16px;
+}
+
+#county-image-vaslui {
+    margin-right: 10px;
+}
+
+#county-image-valcea {
+    margin-right: 10px;
 }
 
