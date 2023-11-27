@@ -73,6 +73,9 @@
 $PrimaryColor: #2196f3;
 $PrimaryRgbColor: rgb(33, 150, 243);
 
+$radius-xs: 2px;
+$radius-sm: 4px;
+
 $desk-lg-screen: 1200px;
 $desk-md-screen: 1199px;
 $desk-small-screen: 1024px;
@@ -5004,3 +5007,181 @@ body.error-page {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+//extra.css
+/* ===================================
+    /**
+    buton ul principal din site
+ */
+/* button style */
+.custom-button {
+  background: $PrimaryColor;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  -webkit-transition: all linear 300ms;
+  transition: all linear 300ms;
+  border: none;
+
+  &:hover, &:active {
+    color: #fff;
+    background: #232323;
+  }
+}
+
+a.custom-button {
+  &:hover, &:active {
+    color: #fff;
+    background: #232323;
+  }
+}
+
+.custom-button {
+  &:focus {
+    color: #fff;
+  }
+
+  &.white {
+    background: #fff;
+    color: $PrimaryColor;
+
+    &:hover {
+      color: #fff;
+      background: #232323;
+    }
+  }
+}
+
+a.custom-button.white {
+  &:hover, &:active {
+    color: #fff;
+    background: #232323;
+  }
+}
+
+.custom-button {
+  &.small {
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 20px;
+  }
+
+  &.transparent {
+    background: none;
+    border: 1px solid #dee2e6;
+    color: #232323;
+
+    &:hover {
+      background: $PrimaryColor;
+      border: 1px solid $PrimaryColor;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: $desk-xs-screen) {
+  .custom-button {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: $tablet-xs-screen) {
+  .custom-button {
+    padding: 10px 22px;
+    font-size: 12px;
+
+    &.small {
+      padding: 6px 18px;
+    }
+  }
+}
+
+.member-status {
+  //background: #e5dbdb;
+  padding: 2px;
+  margin: 2px;
+  //border: 1px solid #eee;
+  border-radius: $radius-xs;
+  text-align: center;
+  width: 100%;
+}
+
+.status-free {
+  background: orange;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+/**
+* @describe tooltip css
+*/
+.tooltip-star {
+  background: #ccc !important;
+  padding: 5px;
+  border-radius: $radius-sm;
+  color: #fff;
+}
+
+.star-notification {
+  color: #f10216;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.company-logo {
+  height: 9rem;
+  width: 100%;
+}
+
+.custom-img {
+  height: 14rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+/**
+* @describe icoane info albastre
+ */
+
+.icon-info-wrapper {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+
+  .info-icon {
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    color: #fff;
+    margin-left: 10px;
+    background: $PrimaryColor;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.form-entity-status {
+  border-radius: $radius-xs;
+  background: $PrimaryColor !important;
+  color: #fff !important;
+
+  span {
+    color: #fff !important;
+  }
+}
