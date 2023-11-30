@@ -3676,8 +3676,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     float: right;
     height: 14px;
     font-size: 18px;
-    /*margin-top: 6px; */
-    margin-top: 2px;
+    margin-top: 6px;
     display: block;
   }
   .page-sidebar-collapsed #sidebar-toggle-button-close {
@@ -4431,6 +4430,14 @@ a.custom-button.white:hover, a.custom-button.white:active {
 }
 .form-entity-status span {
   color: #fff !important;
+}
+
+.ql-toolbar.ql-snow {
+  width: 100% !important;
+}
+
+#editor-wrapper {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -324,6 +324,7 @@ yearFooter.innerHTML = `
                     <a href="index.html">  www.firmecadastru.ro</a>
                 </p>
 `;
+document.getElementById('editor').classList.add("border-danger");
 
 
 

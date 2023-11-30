@@ -16,7 +16,7 @@ sidebar.innerHTML = `
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="despreFirma.html">
                                 <i class="menu-icon icon-inbox"></i><span>Despre firma</span>
                             </a>
                         </li>
