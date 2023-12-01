@@ -5195,3 +5195,16 @@ a.custom-button.white {
 #editor-wrapper {
   margin-bottom: 1rem;
 }
+
+.hiddenSmall {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.hiddenLarge {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

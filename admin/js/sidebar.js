@@ -21,7 +21,7 @@ sidebar.innerHTML = `
                             </a>
                         </li>
                         <li>
-                            <a href="booking.html">
+                            <a href="dateFiscale.html">
                                 <i class="menu-icon icon-book"></i><span>Date fiscale</span>
                             </a>
                         </li>

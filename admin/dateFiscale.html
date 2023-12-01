@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta content="Chitrakoot Web" name="author"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="admin,dashboard" name="keywords"/>
+    <meta content="Finders - Directory Listing Template" name="description"/>
+
+    <!-- title  -->
+    <title>Firme Cadastru about</title>
+
+    <!-- favicon -->
+    <link href="../img/logos/favicon.png" rel="shortcut icon">
+    <link href="../img/logos/apple-touch-icon-57x57.png" rel="apple-touch-icon">
+    <link href="../img/logos/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="../img/logos/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+    <!-- common plugins -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="plugins/icomoon/style.css" rel="stylesheet"/>
+    <link href="plugins/switchery/switchery.min.css" rel="stylesheet"/>
+
+    <!-- custom css -->
+    <link href="css/styles.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<!-- start page loading -->
+<div id="preloader">
+    <div class="row loader">
+        <div class="loader-icon"></div>
+    </div>
+</div>
+<!-- end page loading -->
+
+<!-- start page container -->
+<div class="page-container">
+    <!-- start page sidebar -->
+    <div class="page-sidebar">
+        <a class="logo-box" href="index.html">
+            <span>Finder</span>
+            <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+            <i class="icon-close" id="sidebar-toggle-button-close"></i>
+        </a>
+        <div class="page-sidebar-inner">
+            <div class="page-sidebar-menu">
+                <ul class="accordion-menu">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end page sidebar -->
+
+    <!-- start page content -->
+    <div class="page-content">
+        <!-- start page header -->
+        <div class="page-header">
+            <div class="search-form">
+                <form action="#" method="GET">
+                    <div class="input-group">
+                        <input class="form-control search-input" name="search" placeholder="Type something..."
+                               type="text">
+                        <span class="input-group-btn">
+                                    <button class="btn btn-default" id="close-search" type="button"><i
+                                            class="icon-close"></i></button>
+                                </span>
+                    </div>
+                </form>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <div class="logo-sm">
+                            <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
+                            <a class="logo-box" href="index.html"><span>Finder</span></a>
+                        </div>
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1"
+                                data-toggle="collapse" type="button">
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </div>
+
+                    <!-- collect the nav links, forms, and other content for toggling -->
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i
+                                    class="fa fa-bars"></i></a></li>
+                            <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a>
+                            </li>
+                            <li><a href="javascript:void(0)" id="search-button"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"
+                                   href="javascript:void(0)"><i class="fa fa-envelope"></i></a></li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                   data-toggle="dropdown" href="javascript:void(0)" role="button"><i
+                                        class="fa fa-bell"></i></a>
+                                <ul class="dropdown-menu dropdown-lg dropdown-content">
+                                    <li class="drop-title">Notifications<a class="drop-title-link" href="#"><i
+                                            class="fa fa-angle-right"></i></a></li>
+                                    <li class="slimscroll dropdown-notifications">
+                                        <ul class="list-unstyled dropdown-oc">
+                                            <li>
+                                                <a href="#"><span class="notification-badge bg-primary"><i
+                                                        class="fa fa-photo"></i></span>
+                                                    <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
+                                                                <small class="notification-date">20:00</small>
+                                                            </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="notification-badge bg-primary"><i
+                                                        class="fa fa-at"></i></span>
+                                                    <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".
+                                                                <small class="notification-date">06:07</small>
+                                                            </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="notification-badge bg-danger"><i
+                                                        class="fa fa-bolt"></i></span>
+                                                    <span class="notification-info">4 new special offers from the apps you follow!
+                                                                <small class="notification-date">Yesterday</small>
+                                                            </span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="notification-badge bg-success"><i
+                                                        class="fa fa-bullhorn"></i></span>
+                                                    <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
+                                                                <small class="notification-date">Yesterday</small>
+                                                            </span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user-dropdown">
+                                <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#" role="button"><img
+                                        alt="" class="rounded-circle" src="../img/avatars/user-dropdown.jpg"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#"><span class="badge float-right badge-danger">42</span>Messages</a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li><a href="#">Account Settings</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- end page header -->
+
+        <!-- start page inner -->
+        <div class="page-inner">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li aria-current="page" class="breadcrumb-item active">Date fiscale</li>
+                </ol>
+            </nav>
+            <div class="page-title">
+                <!--                <h3 class="breadcrumb-header">Despre firma 2</h3>-->
+                <nav aria-label="breadcrumb" style="margin-top: 16px">
+                    <ol class="breadcrumb">
+
+                        <li aria-current="page" class="">
+                            <p>
+                                Actualizati datele fiscale ale firmei / PFA. Sunt necesare in procesul de
+                                facturare. </p>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- start page main wrapper -->
+            <div id="main-wrapper ">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-white">
+
+                            <div class="card-body">
+                                <form id="editForm" action="/admin/firma/date_fiscale" method="post" class="position-relative">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="companyName">Nume
+                                                        <span class="star-notification" id="descriereNumeFirma">*</span>
+                                                    </label>
+                                                    <div class="hidden" id="numeFirmaTooltip" role="tooltip">Descriere
+                                                        obligatorie
+                                                    </div>
+                                                    <input class="form-control" id="companyName" placeholder="IBM S.R.L."
+                                                           type="text" name="numeFirma">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="codeType">CUI
+                                                        <span class="star-notification" id="cuiFirma">*</span>
+                                                    </label>
+                                                    <div class="hidden" id="cuiTooltip" role="tooltip">Descriere
+                                                        obligatorie
+                                                    </div>
+                                                    <input class="form-control" id="codeType" placeholder="0000"
+                                                           type="text">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="codeType">Nr. Registru comert
+                                                        <span class="star-notification" id="registruComert">*</span>
+                                                    </label>
+                                                    <div class="hidden" id="registruComertTooltip" role="tooltip">Descriere
+                                                        obligatorie
+                                                    </div>
+                                                    <input class="form-control" id="registruInput" placeholder="IBM"
+                                                           type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                               <div class="form-group col-md-4">
+                                                    <label for="codeType">Judet
+                                                        <span class="star-notification" id="judetSpan">*</span>
+                                                    </label>
+                                                    <div class="hidden" id="judetTooltip" role="tooltip">Descriere
+                                                        obligatorie
+                                                    </div>
+                                                   <select class="form-control" id="exampleFormControlSelect2">
+                                                       <option selected>Alege Oras...</option>
+                                                       <option value="1">Alba</option>
+                                                       <option value="2">Arad</option>
+                                                       <option value="3">Arges</option>
+                                                       <option value="4">Bacau</option>
+                                                       <option value="5">Bihor</option>
+                                                       <option value="6">Bistrita-Nasaud</option>
+                                                       <option value="7">Botosani</option>
+                                                       <option value="8">Brasov</option>
+                                                       <option value="9">Braila</option>
+                                                       <option value="10">Buzau</option>
+                                                       <option value="11">Caras-Severin</option>
+                                                       <option value="12">Calarasi</option>
+                                                       <option value="13">Cluj</option>
+                                                       <option value="14">Constanta</option>
+                                                       <option value="15">Covasna</option>
+                                                       <option value="16">Dambovita</option>
+                                                       <option value="17">Dolj</option>
+                                                       <option value="18">Galati</option>
+                                                       <option value="19">Giurgiu</option>
+                                                       <option value="20">Gorj</option>
+                                                       <option value="21">Harghita</option>
+                                                       <option value="22">Hunedoara</option>
+                                                       <option value="23">Ialomita</option>
+                                                       <option value="24">Iasi</option>
+                                                       <option value="25">Ilfov</option>
+                                                       <option value="26">Mehedinti</option>
+                                                       <option value="27">Mures</option>
+                                                       <option value="28">Neamt</option>
+                                                       <option value="29">Olt</option>
+                                                       <option value="30">Prahova</option>
+                                                       <option value="31">Satu-Mare</option>
+                                                       <option value="32">Salaj</option>
+                                                       <option value="33">Sibiu</option>
+                                                       <option value="34">Suceava</option>
+                                                       <option value="35">Teleorman</option>
+                                                       <option value="36">Timis</option>
+                                                       <option value="37">Tulcea</option>
+                                                       <option value="38">Vaslui</option>
+                                                       <option value="39">Valcea</option>
+                                                       <option value="40">Vrancea</option>
+                                                   </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputLocalitate">Localitate
+                                                        <span class="star-notification" id="localitateStar">*</span>
+                                                    </label>
+                                                    <div class="hidden" id="localitateTooltip" role="tooltip">Descriere
+                                                        obligatorie
+                                                    </div>
+                                                    <input class="form-control" id="inputLocalitate" placeholder="Buzau"
+                                                           type="text">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputTelefon">Telefon </label>
+                                                    <div id="telefonHeight" style="padding-top: 3px"></div>
+                                                    <input class="form-control" id="inputTelefon"
+                                                           placeholder="0762 333 444"
+                                                           type="text">
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputFax">Fax</label>
+                                                    <input class="form-control" id="inputFax" placeholder="0872 323 322"
+                                                           type="text">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input class="form-control" id="inputEmail"
+                                                           placeholder="georgescu@gmail.com"
+                                                           type="email">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputBanca">Fax</label>
+                                                    <input class="form-control" id="inputBanca" placeholder="ING"
+                                                           type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-row mt-1">
+                                                <label for="companyDescription">Adresa sediul social
+                                                    <span class="star-notification" id="descriptionStar">*</span>
+                                                </label>
+                                                <div class="hidden" id="descriptionTooltip" role="tooltip">Descriere
+                                                    obligatorie
+                                                </div>
+                                                <textarea class="form-control" id="companyDescription"
+                                                          placeholder="Despre compania ta"
+                                                          rows="4"></textarea>
+                                            </div>
+                                        </div>
+
+<!--                                        ascuns pe mobil-->
+<!--                                        <div class="col-md-6 hiddenSmall">-->
+<!--                                            <div class="d-flex flex-sm-row flex-column position-absolute" style="bottom: 5px">-->
+<!--                                                <a class="btn btn-primary  mr-md-1 mr-sm-0 mb-1" href="#" id="saveBtnDesktop">SalveazaB</a>-->
+<!--                                                <a class="btn btn-dribbble ml-md-1 ml-sm-0 mb-1" href="#" id="resetBtnDesktop">ReseteazaB</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+
+
+
+                                    </div>
+                                    <div class="mt-4 mb-mt-0 d-flex  justify-content-between align-content-center">
+                                        <div class="d-flex flex-sm-row flex-column">
+<!--                                            ascuns pe desktop-->
+<!--                                            <div class="hiddenLarge">-->
+<!--                                                <a class="btn btn-primary  mr-md-1 mr-sm-0 mb-1" href="#" id="saveBtn">SalveazaS</a>-->
+<!--                                                <a class="btn btn-dribbble ml-md-1 ml-sm-0 mb-1" href="#" id="resetBtn">ReseteazaS</a>-->
+<!--                                            </div>-->
+                                            <a class="btn btn-primary  mr-md-1 mr-sm-0 mb-1" href="#" id="saveBtn">Salveaza</a>
+                                            <a class="btn btn-dribbble ml-md-1 ml-sm-0 mb-1" href="#" id="resetBtn">Reseteaza</a>
+                                        </div>
+                                        <div>
+                                            <p class="star-notification  f-s-10">
+                                                <span class="star-notification" id="campuriObligatorii">*</span>
+                                                Campuri obligatorii
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end page main wrapper -->
+            <div class="page-footer">
+                <!--                <p>Copyright &copy; 2020 Finder All rights reserved.</p>-->
+                <p class="text-medium-gray font-weight-600 margin-5px-top xs-no-margin-top ml-4" id="yearFooter"></p>
+
+            </div>
+        </div>
+        <!-- end page inner -->
+
+        <!-- start page right sidebar -->
+
+        <!-- start main right sidebar -->
+        <div class="page-right-sidebar" id="main-right-sidebar">
+            <div class="page-right-sidebar-inner">
+                <div class="right-sidebar-top">
+                    <div class="right-sidebar-tabs">
+                        <!-- nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active" id="chat-tab" role="presentation"><a aria-controls="chat" data-toggle="tab"
+                                                                                    href="#chat"
+                                                                                    role="tab">chat</a></li>
+                            <li id="settings-tab" role="presentation"><a aria-controls="settings" data-toggle="tab"
+                                                                         href="#settings" role="tab">settings</a></li>
+                        </ul>
+                    </div>
+                    <a class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"
+                       href="javascript:void(0)"><i class="icon-close"></i></a>
+                </div>
+                <div class="right-sidebar-content">
+                    <!-- start tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="chat">
+                            <div class="chat-list">
+                                <span class="chat-title">Recent</span>
+                                <a class="right-sidebar-toggle chat-item unread" data-sidebar-id="chat-right-sidebar"
+                                   href="javascript:void(0);">
+                                    <div class="user-avatar">
+                                        <img alt="" src="../img/avatars/chat01.jpg"/>
+                                    </div>
+                                    <div class="chat-info">
+                                        <span class="chat-author">David</span>
+                                        <span class="chat-text">where u at?</span>
+                                        <span class="chat-time">08:50</span>
+                                    </div>
+                                </a>
+                                <a class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar"
+                                   href="javascript:void(0);">
+                                    <div class="user-avatar">
+                                        <img alt="" src="../img/avatars/chat02.jpg"/>
+                                    </div>
+                                    <div class="chat-info">
+                                        <span class="chat-author">Daisy</span>
+                                        <span class="chat-text">Daisy sent a photo.</span>
+                                        <span class="chat-time">11:34</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="chat-list">
+                                <span class="chat-title">Older</span>
+                                <a class="right-sidebar-toggle chat-item" data-sidebar-id="chat-right-sidebar"
+                                   href="javascript:void(0);">
+                                    <div class="user-avatar">
+                                        <img alt="" src="../img/avatars/chat03.jpg"/>
+                                    </div>
+                                    <div class="chat-info">
+                                        <span class="chat-author">Tom</span>
+                                        <span class="chat-text">You: ok</span>
+                                        <span class="chat-time">2d</span>
+                                    </div>
+                                </a>
+                                <a class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar"
+                                   href="javascript:void(0);">
+                                    <div class="user-avatar">
+                                        <img alt="" src="../img/avatars/chat04.jpg"/>
+                                    </div>
+                                    <div class="chat-info">
+                                        <span class="chat-author">Anna</span>
+                                        <span class="chat-text">asdasdasd</span>
+                                        <span class="chat-time">4d</span>
+                                    </div>
+                                </a>
+                                <a class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar"
+                                   href="javascript:void(0);">
+                                    <div class="user-avatar">
+                                        <img alt="" src="../img/avatars/chat05.jpg"/>
+                                    </div>
+                                    <div class="chat-info">
+                                        <span class="chat-author">Liza</span>
+                                        <span class="chat-text">asdasdasd</span>
+                                        <span class="chat-time">&nbsp;</span>
+                                    </div>
+                                </a>
+                                <a class="load-more-messages" data-placement="bottom" data-toggle="tooltip"
+                                   href="javascript:void(0);" title="Load More">&bull;&bull;&bull;</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings">
+                            <div class="right-sidebar-settings">
+                                <span class="settings-title">General Settings</span>
+                                <ul class="sidebar-setting-list list-unstyled">
+                                    <li>
+                                        <span class="settings-option">Notifications</span>
+                                        <input checked class="js-switch" type="checkbox"/>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Activity log</span>
+                                        <input checked class="js-switch" type="checkbox"/>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Automatic updates</span>
+                                        <input class="js-switch" type="checkbox"/>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Allow backups</span>
+                                        <input class="js-switch" type="checkbox"/>
+                                    </li>
+                                </ul>
+                                <span class="settings-title">Account Settings</span>
+                                <ul class="sidebar-setting-list list-unstyled">
+                                    <li>
+                                        <span class="settings-option">Chat</span>
+                                        <input checked class="js-switch" type="checkbox"/>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Incognito mode</span>
+                                        <input class="js-switch" type="checkbox"/>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Public profile</span>
+                                        <input class="js-switch" type="checkbox"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main right sidebar -->
+
+        <!-- start chat right sidebar -->
+        <div class="page-right-sidebar" id="chat-right-sidebar">
+            <div class="page-right-sidebar-inner">
+                <div class="right-sidebar-top">
+                    <div class="chat-top-info">
+                        <span class="chat-name">Noah</span>
+                        <span class="chat-state">2h ago</span>
+                    </div>
+                    <a class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"
+                       href="javascript:void(0)"><i class="icon-keyboard_arrow_right"></i></a>
+                </div>
+                <div class="right-sidebar-content">
+                    <div class="right-sidebar-chat slimscroll">
+                        <div class="chat-bubbles">
+                            <div class="chat-start-date">02/03/2019 5:58PM</div>
+                            <div class="chat-bubble them">
+                                <div class="chat-bubble-img-container">
+                                    <img alt="" src="../img/avatars/chat06.jpg"/>
+                                </div>
+                                <div class="chat-bubble-text-container">
+                                    <span class="chat-bubble-text">Hello</span>
+                                </div>
+                            </div>
+                            <div class="chat-bubble me">
+                                <div class="chat-bubble-text-container">
+                                    <span class="chat-bubble-text">Hello!</span>
+                                </div>
+                            </div>
+                            <div class="chat-start-date">03/02/2019 5:18AM</div>
+                            <div class="chat-bubble me">
+                                <div class="chat-bubble-text-container">
+                                    <span class="chat-bubble-text">lorem</span>
+                                </div>
+                            </div>
+                            <div class="chat-bubble them">
+                                <div class="chat-bubble-img-container">
+                                    <img alt="" src="../img/avatars/chat07.jpg"/>
+                                </div>
+                                <div class="chat-bubble-text-container">
+                                    <span class="chat-bubble-text">ipsum dolor sit amet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-write">
+                        <form action="javascript:void(0);" class="form-horizontal">
+                            <input class="form-control" placeholder="Say something" type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end chat right sidebar -->
+
+        <!-- end page right sidebar -->
+
+    </div>
+    <!-- end page content -->
+</div>
+<!-- end page container -->
+
+<!-- all js include start -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+
+<!-- bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- switchery -->
+<script src="plugins/switchery/switchery.min.js"></script>
+
+<!-- custom scripts -->
+<script src="js/main.js" type="module"></script>
+<script src="js/sidebar.js" type="module"></script>
+<script src="js/dateFiscale.js" type="module"></script>
+
+
+<!-- all js include end -->
+
+</body>
+
+</html>

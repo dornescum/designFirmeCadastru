@@ -247,7 +247,7 @@
 
             <!-- start page main wrapper -->
             <div id="main-wrapper w-100">
-                <div class="row  rounded " style="border: 1px solid #ccc">
+                <div class="row  rounded ml-sm-0 ml-md-1" style="border: 1px solid #ccc">
 <!--                    <p>test</p>-->
                     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
@@ -266,17 +266,23 @@
                     </div>
 
 
-
-
                     <!-- Include the Quill library -->
                     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
                     <!-- Initialize Quill editor -->
                     <script>
+
                         var quill = new Quill('#editor', {
                             theme: 'snow'
                         });
-                        // quill.classList.add("border-danger");
+
+                        document.getElementById('salvare').onclick = function() {
+                            var text = quill.getText();
+                            var contents = quill.root.innerHTML;
+                            console.log('Text: ', text);
+                            console.log('HTML: ', contents);
+                        }
+
                     </script>
                 </div>
 

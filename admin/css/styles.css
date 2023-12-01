@@ -4440,4 +4440,22 @@ a.custom-button.white:hover, a.custom-button.white:active {
   margin-bottom: 1rem;
 }
 
+.hiddenSmall {
+  display: block;
+}
+@media (max-width: 768px) {
+  .hiddenSmall {
+    display: none;
+  }
+}
+
+.hiddenLarge {
+  display: none;
+}
+@media (max-width: 767px) {
+  .hiddenLarge {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
