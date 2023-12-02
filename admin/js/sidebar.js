@@ -26,8 +26,13 @@ sidebar.innerHTML = `
                             </a>
                         </li>
                         <li>
-                            <a href="wallet.html">
+                            <a href="galerieFoto.html">
                                 <i class="menu-icon icon-newspaper"></i><span>Galerie foto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tipuriLucrari.html">
+                                <i class="menu-icon icon-newspaper"></i><span>Tipuri de lucrari</span>
                             </a>
                         </li>
 <!--contact-->
