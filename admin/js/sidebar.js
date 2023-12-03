@@ -49,7 +49,7 @@ sidebar.innerHTML = `
                         </li>
 
                         <li>
-                            <a href="reviews.html">
+                            <a href="dateContact.html">
                                 <i class="menu-icon icon-star-empty"></i><span>Date contact</span>
                             </a>
                         </li>

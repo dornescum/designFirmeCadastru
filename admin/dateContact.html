@@ -181,26 +181,29 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li aria-current="page" class="breadcrumb-item active">Lista mesaje</li>
+                    <li aria-current="page" class="breadcrumb-item active">Date contact</li>
                 </ol>
             </nav>
             <div class="page-title">
-                <h3 class="breadcrumb-header">Lista mesaje</h3>
+                <h3 class="breadcrumb-header">Solicitari date contact (telefon/email)</h3>
                 <nav aria-label="breadcrumb" style="margin-top: 16px">
-                    <p>Aici puteti regasi mesajele primite prin intermediul formularului de contact din pagina dvs. de
-                        prezentare/profil.</p>
+<!--                    <p>Aici puteti regasi mesajele primite prin intermediul formularului de contact din pagina dvs. de-->
+<!--                        prezentare/profil.</p>-->
                     <ol class="list-group pl-4">
 
                         <li aria-current="page" class="">
                             <p>
-                                Clientul intra pe pagina dvs. de prezentare, completeaza formularul de contact apoi
-                                apasa butonul "Trimite mesaj".
+                                Aceasta pagina contine desfasuratorul solicitarilor datelor de contact direct (telefon
+                                si email), ordonate cronologic descrescator. Mai exact, de fiecare data cand un
+                                potential client face click pe butonul telefon sau email, de pe pagina dvs. de
+                                prezentare, sistemul inregistreaza actiunea si apoi returneaza informatia solicitata.
                             </p>
                         </li>
                         <li>
                             <p>
-                                Noi validam mesajul (sa nu fie SPAM, sa nu contina injurii etc.), apoi il trimitem mai
-                                departe catre dvs.
+                                Astfel, dumneavoastra puteti corela mai usor apelurile telefonice primite intr-o zi cu
+                                solicitarile numarului de telefon. In mod asemanator se face asocierea dintre
+                                email-urile primite si solicitarile adresei de email.
                             </p>
                         </li>
                     </ol>
@@ -210,44 +213,36 @@
             <!-- start page main wrapper -->
             <div id="main-wrapper">
                 <div class="card card-white">
-                    <ol class="list-group" id="mesaje-clienti">
-                        <li>
-                            <article>
-                                <div class="card" style="border: 1px solid #ccc">
-                                    <div class="d-flex justify-content-between ">
-
-                                        <p class="font-weight-bold">Ionel popescu</p>
-<!--                                        fixme-->
-<!--                                        <p> <span><i class="fa fa-clock-o" aria-hidden="true"></i></span> 11.11.2023</p>-->
-                                        <p class="font-italic"> <span><i class="menu-icon fa fa-edit " aria-hidden="true"></i></span> 11.11.2023</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between  card-body">
-
-                                        <p class="font-weight-bold"><i class="fa fa-phone" aria-hidden="true"></i>
-                                            0785432565</p>
-                                        <p class="font-italic"> <i class="menu-icon fa fa-envelope pr-1" aria-hidden="true"></i>
-                                            gino@gmail.com</p>
-                                    </div>
-                                    <div class="card-body w-100">
-                                        <div>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                            blanditiis, doloremque ducimus esse explicabo inventore ipsa ipsum iste
-                                            minus necessitatibus odio perspiciatis quis temporibus. Fugit nobis repellat
-                                            voluptatem. Alias aliquam aliquid animi blanditiis consequatur deleniti
-                                            dicta dolor dolorum earum esse explicabo fugit id illo incidunt, maxime
-                                            neque omnis porro praesentium provident quam, quisquam reiciendis vel! Ab
-                                            accusamus amet aperiam architecto aut autem consectetur consequatur delectus
-                                            deleniti dicta dignissimos dolorem dolores doloribus eaque eligendi
-                                            excepturi, expedita illo inventore ipsum itaque laboriosam libero nobis
-                                            perspiciatis, quam quas quo repudiandae sapiente vitae voluptas voluptate.
-                                            At delectus doloremque hic magni natus nisi omnis porro.
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </article>
-                        </li>
-                    </ol>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nr. criteriu</th>
+                            <th scope="col">Tip contact</th>
+                            <th scope="col">User IP</th>
+                            <th scope="col">Data</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+<!--                        <tr>-->
+<!--                            <th scope="row">1</th>-->
+<!--                            <td>Mark</td>-->
+<!--                            <td>Otto</td>-->
+<!--                            <td>@mdo</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <th scope="row">2</th>-->
+<!--                            <td>Jacob</td>-->
+<!--                            <td>Thornton</td>-->
+<!--                            <td>@fat</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <th scope="row">3</th>-->
+<!--                            <td>Larry</td>-->
+<!--                            <td>the Bird</td>-->
+<!--                            <td>@twitter</td>-->
+<!--                        </tr>-->
+                        </tbody>
+                    </table>
                 </div>
 
                 <nav aria-label="Page navigation example" class="d-flex justify-content-center align-items-center">
@@ -479,7 +474,7 @@
 <!-- custom scripts -->
 <script src="js/main.js" type="module"></script>
 <script src="js/sidebar.js" type="module"></script>
-<script src="js/mesaje.js" type="module"></script>
+<script src="js/dateContact.js" type="module"></script>
 
 <!-- all js include end -->
 
