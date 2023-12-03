@@ -43,7 +43,7 @@ sidebar.innerHTML = `
                             </h4></li>
 
                         <li>
-                            <a href="my-listing.html">
+                            <a href="mesaje.html">
                                 <i class="menu-icon icon-list2"></i><span>Mesaje</span>
                             </a>
                         </li>
